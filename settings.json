@@ -1,0 +1,52 @@
+{
+  "breadcrumbs.enabled": true,
+  "css.lint.unknownAtRules": "ignore",
+  "editor.detectIndentation": false,
+  "editor.fontFamily": "Cascadia Code",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.formatOnSave": true,
+  "editor.insertSpaces": true,
+  "editor.minimap.enabled": true,
+  "editor.parameterHints.enabled": false,
+  "editor.lineHeight": 20,
+  "editor.renderControlCharacters": false,
+  "editor.rulers": [
+    80,
+    120
+  ],
+  "editor.renderIndentGuides": true,
+  "editor.renderLineHighlight": "gutter",
+  "editor.tabSize": 2,
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "formattingToggle.affects": [
+    "formatOnSave"
+  ],
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "javascript.suggest.autoImports": false,
+  "terminal.integrated.fontFamily": "Cascadia Code", 
+  "terminal.integrated.rendererType": "dom",
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "workbench.iconTheme": "material-icon-theme",
+  "files.associations": {
+    "*.ts": "typescript"
+  },
+  "explorer.compactFolders": false,
+  "workbench.colorTheme": "Material Theme Ocean High Contrast",
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "cSpell.language": "en,pt-BR",
+  "cSpell.userWords": [
+    "ilike"
+  ]
+}

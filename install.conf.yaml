@@ -1,0 +1,15 @@
+- defaults:
+    link:
+      relink: true
+      create: true
+
+- clean: ["~"]
+
+- link:
+    ~/.zshrc: .zshrc
+    ~/.gitconfig: .gitconfig
+    "~/Library/Application Support/Code/User/settings.json": settings.json
+    "~/Library/Application Support/Code/User/keybindings.json": keybindings.json
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
