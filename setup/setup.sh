@@ -14,7 +14,3 @@ source ~/.dotfiles/setup/oh-my-zsh.sh
 
 echo ----------- setup Visual Studio Configuration ------------
 source ~/.dotfiles/setup/vs-code.sh
-
-
-
-echo 
