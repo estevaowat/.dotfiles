@@ -40,7 +40,8 @@
     "*.ts": "typescript"
   },
   "explorer.compactFolders": false,
-  "workbench.colorTheme": "Material Theme Ocean High Contrast",
+  "workbench.colorTheme": "Material Theme Palenight High Contrast",
   "editor.formatOnPaste": true,
-  "editor.formatOnType": true,
+"editor.formatOnType": true,
+"workbench.productIconTheme": "icons-carbon",
 }
