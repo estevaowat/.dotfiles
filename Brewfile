@@ -2,13 +2,14 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 
-# NCurses Disk Usage
+brew "git"
 brew "ncdu"
-
-# UNIX shell (command interpreter)
 brew "zsh"
-
-# Additional completion definitions for zsh
+brew "nvm"
 brew "zsh-completions"
-
 cask "visual-studio-code"
+cask "google-chrome"
+cask "discord"
+cask "iterm2"
+brew "git-cola"
+brew "git-flow"
