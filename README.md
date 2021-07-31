@@ -1,6 +1,6 @@
 # .dotfiles
 
-The objective of this repo is to setup my dev machine ASAP.
+The objective of this repo is to setup my dev machine AFAP.
 
 ## How to setup machine (Only works on Mac environments)
 
