@@ -5,6 +5,10 @@
   "editor.fontFamily": "Cascadia Code",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": true,
   "editor.formatOnSave": true,
   "editor.insertSpaces": true,
   "editor.minimap.enabled": true,
@@ -27,25 +31,20 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
+  "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "javascript.updateImportsOnFileMove.enabled": "never",
   "javascript.suggest.autoImports": false,
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
   "terminal.integrated.fontFamily": "Source Code Pro",
   "terminal.integrated.fontSize": 14,
+  "terminal.integrated.defaultProfile.osx": "zsh",
   "workbench.iconTheme": "material-icon-theme",
   "files.associations": {
     "*.ts": "typescript"
   },
-  "explorer.compactFolders": false,
   "workbench.colorTheme": "Panda Theme High Contrast",
-  "editor.formatOnPaste": true,
-"editor.formatOnType": true,
-"terminal.integrated.defaultProfile.osx": "zsh",
-"editor.accessibilityPageSize": 11,
-"editor.cursorBlinking": "phase",
-"editor.cursorSmoothCaretAnimation": true,
-"telemetry.enableCrashReporter": false,
-"telemetry.enableTelemetry": false,
-"workbench.productIconTheme": "icons-carbon"
+  "workbench.productIconTheme": "icons-carbon"
 }
