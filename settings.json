@@ -38,9 +38,14 @@
     "*.ts": "typescript"
   },
   "explorer.compactFolders": false,
-  "workbench.colorTheme": "Material Theme Palenight High Contrast",
+  "workbench.colorTheme": "Panda Theme High Contrast",
   "editor.formatOnPaste": true,
 "editor.formatOnType": true,
-"workbench.productIconTheme": "icons-carbon",
 "terminal.integrated.defaultProfile.osx": "zsh",
+"editor.accessibilityPageSize": 11,
+"editor.cursorBlinking": "phase",
+"editor.cursorSmoothCaretAnimation": true,
+"telemetry.enableCrashReporter": false,
+"telemetry.enableTelemetry": false,
+"workbench.productIconTheme": "icons-carbon"
 }
