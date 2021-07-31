@@ -31,10 +31,8 @@
   "explorer.confirmDragAndDrop": false,
   "javascript.updateImportsOnFileMove.enabled": "never",
   "javascript.suggest.autoImports": false,
-  "terminal.integrated.fontFamily": "Fira Code",
-  "terminal.integrated.fontSize": 13,
-  "terminal.integrated.rendererType": "dom",
-  "terminal.integrated.shell.osx": "/bin/zsh",
+  "terminal.integrated.fontFamily": "Source Code Pro",
+  "terminal.integrated.fontSize": 14,
   "workbench.iconTheme": "material-icon-theme",
   "files.associations": {
     "*.ts": "typescript"
@@ -44,4 +42,5 @@
   "editor.formatOnPaste": true,
 "editor.formatOnType": true,
 "workbench.productIconTheme": "icons-carbon",
+"terminal.integrated.defaultProfile.osx": "zsh",
 }
