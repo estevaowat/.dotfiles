@@ -14,3 +14,5 @@ source ~/.dotfiles/setup/oh-my-zsh.sh
 
 echo ----------- Configuring Visual Studio Code ------------
 source ~/.dotfiles/setup/vs-code.sh
+ 
+echo  💥💥💥💥 Machine READY TO USE 💥💥💥💥

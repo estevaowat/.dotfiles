@@ -14,7 +14,7 @@
    "editor.insertSpaces": true,
    "editor.minimap.enabled": true,
    "editor.parameterHints.enabled": false,
-   "editor.lineHeight": 20,
+   "editor.lineHeight": 22,
    "editor.renderControlCharacters": false,
    "editor.rulers": [
       80,
