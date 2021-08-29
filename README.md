@@ -9,3 +9,9 @@ git clone https://github.com/estevaowat/.dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 source ./setup/setup.sh
 ```
+
+## List all your vscode extensions
+
+```bash
+code --list-extensions
+```

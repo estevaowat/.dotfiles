@@ -1,3 +1,4 @@
+
 # Install vscode extensions
 code --install-extension antfu.icons-carbon
 code --install-extension dbaeumer.vscode-eslint
@@ -15,10 +16,6 @@ code --install-extension ritwickdey.LiveServer
 code --install-extension shd101wyy.markdown-preview-enhanced
 code --install-extension DavidAnson.vscode-markdownlint
 code --install-extension eamodio.gitlens  
-code --install-extension ms-python.python
-code --install-extension ms-python.vscode-pylance
-code --install-extension ms-toolsai.jupyter
-code --install-extension redhat.java
 code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension streetsidesoftware.code-spell-checker-portuguese-brazilian
 code --install-extension VisualStudioExptTeam.vscodeintellicode
@@ -27,3 +24,7 @@ code --install-extension vscjava.vscode-java-dependency
 code --install-extension vscjava.vscode-java-pack
 code --install-extension vscjava.vscode-java-test
 code --install-extension vscjava.vscode-maven
+code --instal-extension danielsousadev.styled-components-snippets
+code --instal-extension dsznajder.es7-react-js-snippets
+code --instal-extension GitHub.copilot
+code --instal-extension jpoissonnier.vscode-styled-components
