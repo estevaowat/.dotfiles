@@ -13,5 +13,9 @@
     "key": "shift+alt+down",
     "command": "-editor.action.copyLinesDownAction",
     "when": "editorTextFocus && !editorReadonly"
-  }
+},
+{
+   "key": "shift+cmd+u",
+   "command": "editor.action.transformToUppercase"
+}
 ]
