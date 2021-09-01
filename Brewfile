@@ -30,3 +30,5 @@ cask "iterm2"
 cask "notion"
 # Visual studio code
 cask "visual-studio-code"
+# Intellij Community Edition
+cask "intellij-idea-ce"
