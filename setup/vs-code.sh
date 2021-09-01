@@ -1,11 +1,13 @@
-
-# Install vscode extensions
 code --install-extension antfu.icons-carbon
+code --install-extension danielsousadev.styled-components-snippets
 code --install-extension dbaeumer.vscode-eslint
+code --install-extension dsznajder.es7-react-js-snippets
 code --install-extension EditorConfig.EditorConfig
 code --install-extension esbenp.prettier-vscode
+code --install-extension GitHub.copilot
 code --install-extension igorming.useful-react-snippets
 code --install-extension jiza.theme-panda-high-contrast
+code --install-extension jpoissonnier.vscode-styled-components
 code --install-extension mikestead.dotenv
 code --install-extension ms-azuretools.vscode-docker
 code --install-extension ms-vscode-remote.remote-containers
@@ -14,17 +16,3 @@ code --install-extension PKief.material-icon-theme
 code --install-extension Prisma.prisma
 code --install-extension ritwickdey.LiveServer
 code --install-extension shd101wyy.markdown-preview-enhanced
-code --install-extension DavidAnson.vscode-markdownlint
-code --install-extension eamodio.gitlens  
-code --install-extension streetsidesoftware.code-spell-checker
-code --install-extension streetsidesoftware.code-spell-checker-portuguese-brazilian
-code --install-extension VisualStudioExptTeam.vscodeintellicode
-code --install-extension vscjava.vscode-java-debug
-code --install-extension vscjava.vscode-java-dependency
-code --install-extension vscjava.vscode-java-pack
-code --install-extension vscjava.vscode-java-test
-code --install-extension vscjava.vscode-maven
-code --instal-extension danielsousadev.styled-components-snippets
-code --instal-extension dsznajder.es7-react-js-snippets
-code --instal-extension GitHub.copilot
-code --instal-extension jpoissonnier.vscode-styled-components

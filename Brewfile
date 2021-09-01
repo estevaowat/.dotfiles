@@ -1,25 +1,32 @@
+tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
-
-brew "ncdu"
-brew "zsh"
-brew "nvm"
+tap "microsoft/git"
+# Highly caffeinated git GUI
 brew "git-cola"
+# Extensions to follow Vincent Driessen's branching model
 brew "git-flow"
-brew "zsh-completions"
-brew "gdbm"
-brew "ncurses"
+# NCurses Disk Usage
+brew "ncdu"
+# Manage multiple Node.js versions
+brew "nvm"
+# Send macOS User Notifications from the command-line
+brew "terminal-notifier"
+# Watch files and take action when they change
 brew "watchman"
-brew "icu4c"
-brew "openssl@1.1"
-brew "readline"
-brew "xz"
-brew "pcre"
-brew "sqlite"
+# UNIX shell (command interpreter)
+brew "zsh"
+# Additional completion definitions for zsh
+brew "zsh-completions"
 cask "git-credential-manager-core"
-cask "visual-studio-code"
+# Web browser
 cask "google-chrome"
+# Discord
 cask "discord"
+# Iterm2
 cask "iterm2"
+# Notion
 cask "notion"
+# Visual studio code
+cask "visual-studio-code"

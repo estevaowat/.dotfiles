@@ -1,5 +1,5 @@
-# Install Homebrew
+echo "Installing HomeBrew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-# Install applications from brew file
+echo "Installing applications using Brew"
 brew bundle --file ~/.dotfiles/Brewfile
