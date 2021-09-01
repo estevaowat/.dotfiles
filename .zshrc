@@ -4,23 +4,21 @@ prompt spaceship
 ZSH_THEME="spaceship"
 
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+
 plugins=(
-  node
   git 
   vscode
-  github
   common-aliases
   command-not-found
   copyfile
-  common-aliases
-  iterm2
+  alias-finder
+  bgnotify
 )
+
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 
 export ZSH="/Users/estevaowatanabe/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh 
-
-source "$HOME/.dotfiles/aliases/git/aliases.sh"
 
 SPACESHIP_PROMPT_ORDER=(
   user          # Username section
