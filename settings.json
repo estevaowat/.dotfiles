@@ -1,6 +1,5 @@
 {
    "breadcrumbs.enabled": true,
-   "cSpell.language": "en,pt-BR",
    "css.lint.unknownAtRules": "ignore",
    "editor.detectIndentation": false,
    "editor.fontFamily": "Cascadia Code",
@@ -46,16 +45,7 @@
    "files.associations": {
       "*.ts": "typescript"
    },
-   "workbench.colorTheme": "Panda Theme High Contrast",
-   "cSpell.userWords": [
-      "agroanalytics",
-      "hotjar",
-      "medio",
-      "modclima",
-      "ndvi",
-      "sweetalert"
-   ],
-   "gitlens.defaultDateFormat": null,
+   "workbench.colorTheme": "monokai-charcoal",
    "workbench.editorAssociations": {
       "*.ipynb": "jupyter.notebook.ipynb"
    },
@@ -63,13 +53,11 @@
       "editor.defaultFormatter": "esbenp.prettier-vscode"
    },
    "editor.suggestSelection": "first",
-   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
    "files.exclude": {
       "**/.classpath": true,
       "**/.project": true,
       "**/.settings": true,
       "**/.factorypath": true
    },
-   "java.project.importHint": false,
    "workbench.productIconTheme": "icons-carbon"
 }
