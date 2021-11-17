@@ -10,9 +10,9 @@ set colorcolumn=80
 set signcolumn=yes
 
 call plug#begin('~/.vim/plugged')
-Plug 'nvim-telescope/telescope.nvim'
+"   Plug 'nvim-telescope/telescope.nvim'
 Plug 'gruvbox-community/gruvbox'
-Plug 'neovim/nvim-lspconfig'
+"   Plug 'neovim/nvim-lspconfig'
 call plug#end()
 
 colorscheme gruvbox
