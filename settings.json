@@ -35,7 +35,7 @@
   "explorer.confirmDragAndDrop": false,
   "javascript.updateImportsOnFileMove.enabled": "never",
   "javascript.suggest.autoImports": false,
-  "terminal.integrated.fontFamily": "Iosevka-Term-Extrabold-Extended",
+  "terminal.integrated.fontFamily": "Source Code Pro",
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.defaultProfile.osx": "zsh",
   "telemetry.enableCrashReporter": false,
