@@ -3,6 +3,8 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "microsoft/git"
+tap "homebrew/cask-fonts"
+
 # Highly caffeinated git GUI
 brew "git-cola"
 # Extensions to follow Vincent Driessen's branching model
@@ -32,3 +34,5 @@ cask "notion"
 cask "visual-studio-code"
 # Intellij Community Edition
 cask "intellij-idea-ce"
+#Font iosevka
+cask "font-iosevka"

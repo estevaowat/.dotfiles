@@ -1,63 +1,49 @@
 {
-   "breadcrumbs.enabled": true,
-   "css.lint.unknownAtRules": "ignore",
-   "editor.detectIndentation": false,
-   "editor.fontFamily": "Cascadia Code",
-   "editor.fontLigatures": true,
-   "editor.fontSize": 14,
-   "editor.formatOnSave": true,
-   "editor.formatOnPaste": true,
-   "editor.formatOnType": true,
-   "editor.cursorBlinking": "phase",
-   "editor.cursorSmoothCaretAnimation": true,
-   "editor.insertSpaces": true,
-   "editor.minimap.enabled": true,
-   "editor.parameterHints.enabled": false,
-   "editor.lineHeight": 22,
-   "editor.renderControlCharacters": false,
-   "editor.rulers": [
-      80,
-      120
-   ],
-   "editor.renderIndentGuides": true,
-   "editor.renderLineHighlight": "gutter",
-   "editor.tabSize": 3,
-   "emmet.syntaxProfiles": {
-      "javascript": "jsx"
-   },
-   "emmet.includeLanguages": {
-      "javascript": "javascriptreact"
-   },
-   "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
-   },
-   "explorer.confirmDelete": false,
-   "explorer.compactFolders": false,
-   "explorer.confirmDragAndDrop": false,
-   "javascript.updateImportsOnFileMove.enabled": "never",
-   "javascript.suggest.autoImports": false,
-   "terminal.integrated.fontFamily": "Source Code Pro",
-   "terminal.integrated.fontSize": 14,
-   "terminal.integrated.defaultProfile.osx": "zsh",
-   "telemetry.enableCrashReporter": false,
-   "telemetry.enableTelemetry": false,
-   "workbench.iconTheme": "material-icon-theme",
-   "files.associations": {
-      "*.ts": "typescript"
-   },
-   "workbench.colorTheme": "monokai-charcoal",
-   "workbench.editorAssociations": {
-      "*.ipynb": "jupyter.notebook.ipynb"
-   },
-   "[json]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-   },
-   "editor.suggestSelection": "first",
-   "files.exclude": {
-      "**/.classpath": true,
-      "**/.project": true,
-      "**/.settings": true,
-      "**/.factorypath": true
-   },
-   "workbench.productIconTheme": "icons-carbon"
+  "breadcrumbs.enabled": true,
+  "css.lint.unknownAtRules": "ignore",
+  "editor.detectIndentation": false,
+  "editor.fontFamily": "SourceCodePro-Semibold",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.suggestSelection": "first",
+  "editor.insertSpaces": true,
+  "editor.minimap.enabled": true,
+  "editor.parameterHints.enabled": false,
+  "editor.lineHeight": 22,
+  "editor.renderControlCharacters": false,
+  "editor.rulers": [80, 120],
+  "editor.renderIndentGuides": true,
+  "editor.renderLineHighlight": "gutter",
+  "editor.tabSize": 3,
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "explorer.confirmDelete": false,
+  "explorer.compactFolders": false,
+  "explorer.confirmDragAndDrop": false,
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "javascript.suggest.autoImports": false,
+  "terminal.integrated.fontFamily": "Iosevka-Term-Extrabold-Extended",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "files.associations": {
+    "*.ts": "typescript"
+  },
+  "workbench.colorTheme": "monokai-charcoal",
+  "workbench.productIconTheme": "icons-carbon"
 }
