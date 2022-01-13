@@ -1,4 +1,4 @@
-echo "STARTING SETUP" 
+echo "STARTING SETUP"
 
 echo "Installing fonts"
 cp ~/.dotfiles/fonts/*.ttf /Library/Fonts/
@@ -12,7 +12,7 @@ source ~/.dotfiles/install.sh
 echo "Installing oh-my-zsh"
 source ~/.dotfiles/setup/mac/oh-my-zsh.sh
 
-echo "Configuring Visual Studio Code"
-source ~/.dotfiles/setup/mac/vs-code.sh
- 
-echo  "****** Machine READY TO USE ******"
+echo "Installing vs-code extentions"
+source ~/.dotfiles/setup/vscode.sh
+
+echo "****** Machine READY TO USE ******"

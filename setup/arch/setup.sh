@@ -6,7 +6,7 @@ sudo pacman -Sy
 echo "Installing git"
 sudo pacman -S git
 
-echo "Installing THE ALL MIGHT ***NEOVIM*** "
+echo "Installing THE ALL MIGHT ***NEOVIM***"
 sudo pacman -S neovim
 
 echo "Installing plug-vim"
@@ -26,4 +26,4 @@ nvm use --lts
 echo "Installing yarn management packages"
 sudo pacman -S yarn
 
-echo "ALL FINISH TO CODE"
+echo "ALL READY TO CODE!!!"
