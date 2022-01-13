@@ -2,9 +2,15 @@
 
 The objective of this repo is to setup my dev machine AFAP.
 
+<!--
+ TODO: Update readme
+ - only run setup.sh in root, script will detect what OS you are running
+ -->
+
 ## Usage
 
 Download this repo
+
 ```
 git clone https://github.com/estevaowat/.dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
