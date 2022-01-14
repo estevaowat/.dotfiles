@@ -12,6 +12,7 @@ set nowrap
 set colorcolumn=80
 set signcolumn=yes
 set mouse=a
+set autoread
 
 call plug#begin('~/.vim/plugged')
    Plug 'nvim-telescope/telescope.nvim'
