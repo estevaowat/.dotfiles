@@ -4,6 +4,8 @@ set shiftwidth=4
 set expandtab
 set smartindent
 set nu
+set scrolloff=8
+set incsearch
 set hidden
 set smartcase
 set nowrap
