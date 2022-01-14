@@ -2,7 +2,7 @@
   "breadcrumbs.enabled": true,
   "css.lint.unknownAtRules": "ignore",
   "editor.detectIndentation": false,
-  "editor.fontFamily": "SourceCodePro-Semibold",
+  "editor.fontFamily": "Source Code Pro",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
   "editor.formatOnSave": true,
@@ -38,8 +38,6 @@
   "terminal.integrated.fontFamily": "Source Code Pro",
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.defaultProfile.osx": "zsh",
-  "telemetry.enableCrashReporter": false,
-  "telemetry.enableTelemetry": false,
   "workbench.iconTheme": "material-icon-theme",
   "files.associations": {
     "*.ts": "typescript"
@@ -48,5 +46,6 @@
   "workbench.productIconTheme": "icons-carbon",
   "[shellscript]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
-  }
+  },
+  "tabnine.experimentalAutoImports": true
 }

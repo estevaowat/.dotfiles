@@ -6,6 +6,9 @@ sudo pacman -Sy
 echo "Installing git"
 sudo pacman -S git
 
+echo "Installing curl"
+sudo pacman -S curl
+
 echo "Installing THE ALL MIGHT ***NEOVIM***"
 sudo pacman -S neovim
  

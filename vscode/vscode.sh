@@ -16,3 +16,10 @@ code --install-extension PKief.material-icon-theme
 code --install-extension Prisma.prisma
 code --install-extension ritwickdey.LiveServer
 code --install-extension shd101wyy.markdown-preview-enhanced
+code --install-extension 74th.monokai-charcoal-high-contrast
+code --install-extension DavidAnson.vscode-markdownlint
+code --install-extension eamodio.gitlens
+code --install-extension ms-vsliveshare.vsliveshare
+code --install-extension streetsidesoftware.code-spell-checker
+code --install-extension streetsidesoftware.code-spell-checker-portuguese-brazilian
+code --install-extension TabNine.tabnine-vscode
