@@ -19,12 +19,7 @@ source ~/.dotfiles/setup/vscode.sh
 
 echo "Installing ALL MIGHT NEO VIM..."
 sudo apt install neovim
-
-echo "Installing nvm..."
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-
-
-
+ 
 echo "Installing SDKMAN..."
 curl -s "https://get.sdkman.io" | bash
 source "$HOME/.sdkman/bin/sdkman-init.sh"
