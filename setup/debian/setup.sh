@@ -1,3 +1,6 @@
+#!/usr/bin/env sh
+# -*- coding: utf-8 -*-
+
 echo "Updating and upgrading Ubuntu"
 sudo apt update
 sudo apt upgrade
@@ -25,7 +28,7 @@ ln -s ~/.dotfiles/vscode/settings.json ~/.config/Code/User/settings.json
 ln -s ~/.dotfiles/vscode/keybindings.json ~/.config/Code/User/keybindings.json
 
 echo "Installing ALL MIGHT NEO VIM..."
-sudo apt install neovim
+sudo apt install neovims
 
 echo "Installing SDKMAN..."
 curl -s "https://get.sdkman.io" | bash

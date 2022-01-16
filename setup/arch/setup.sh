@@ -1,3 +1,6 @@
+#!/usr/bin/env sh
+# -*- coding: utf-8 -*-
+
 echo "STARTING CONFIGURING ARCH MACHINE"
 
 echo "Updating Arch repositories"
