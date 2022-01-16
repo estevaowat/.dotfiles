@@ -1,0 +1,20 @@
+<application>
+  <component name="FileTypeManager" version="18">
+    <extensionMap>
+      <mapping pattern="queue-farm-buffer-30km-10km-containedPoint-list" type="AUTO_DETECTED" />
+      <mapping pattern="Program" type="AUTO_DETECTED" />
+      <mapping pattern="queue-insurance-company-list.md" type="AUTO_DETECTED" />
+      <mapping pattern="SaveTest.java" type="AUTO_DETECTED" />
+      <mapping pattern="ILogProcessor" type="AUTO_DETECTED" />
+      <mapping pattern="queue-lightning-risk-farm-date-list" type="AUTO_DETECTED" />
+      <mapping ext="space.kts" type="Kotlin" />
+      <mapping ext="gradle.kts" type="Kotlin" />
+      <mapping ext="main.kts" type="Kotlin" />
+      <removed_mapping ext="apk" approved="true" type="ARCHIVE" />
+      <removed_mapping ext="env" approved="true" type="Env File" />
+      <removed_mapping ext="psd" approved="true" type="Image" />
+      <removed_mapping pattern=".env" approved="true" type="Env File" />
+      <removed_mapping pattern=".env.*" approved="true" type="Env File" />
+    </extensionMap>
+  </component>
+</application>

@@ -1,0 +1,7 @@
+Key Promoter X
+com.codota.csp.intellij
+com.dubreuia
+com.gmike.visual-studio-2019-dark
+com.haulmont.jpab
+org.jetbrains.kotlin
+org.sonarlint.idea
