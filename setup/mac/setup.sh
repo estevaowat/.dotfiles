@@ -1,3 +1,6 @@
+#!/usr/bin/env sh
+# -*- coding: utf-8 -*-
+
 echo "STARTING SETUP"
 
 echo "Installing fonts"
@@ -8,11 +11,5 @@ source ~/.dotfiles/setup/mac/homebrew.sh
 
 echo "Creating symbolic links"
 source ~/.dotfiles/install.sh
-
-echo "Installing oh-my-zsh"
-source ~/.dotfiles/setup/mac/oh-my-zsh.sh
-
-echo "Installing vs-code extentions"
-source ~/.dotfiles/setup/vscode.sh
 
 echo "****** Machine READY TO USE ******"

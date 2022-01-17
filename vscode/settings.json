@@ -27,7 +27,8 @@
     "javascript": "javascriptreact"
   },
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": true,
+    "source.fixAll.shellcheck": true
   },
   "explorer.confirmDelete": false,
   "explorer.compactFolders": false,
@@ -46,5 +47,6 @@
   "[shellscript]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },
-  "tabnine.experimentalAutoImports": true
+  "tabnine.experimentalAutoImports": true,
+  "editor.inlineSuggest.enabled": true
 }

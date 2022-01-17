@@ -1,3 +1,5 @@
+#!/usr/bin/env sh
+
 code --install-extension antfu.icons-carbon
 code --install-extension danielsousadev.styled-components-snippets
 code --install-extension dbaeumer.vscode-eslint
@@ -23,3 +25,10 @@ code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension streetsidesoftware.code-spell-checker-portuguese-brazilian
 code --install-extension TabNine.tabnine-vscode
+code --install-extension foxundermoon.shell-format
+code --install-extension mads-hartmann.bash-ide-vscode
+code --install-extension rpinski.shebang-snippets
+code --install-extension sibiraj-s.vscode-scss-formatter
+code --install-extension timonwong.shellcheck
+code --install-extension XadillaX.viml
+

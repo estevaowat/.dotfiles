@@ -20,6 +20,9 @@ brew "nvm"
 #nvim
 brew "neovim"
 
+#nvim
+brew "stow"
+
 # Send macOS User Notifications from the command-line
 brew "terminal-notifier"
 
