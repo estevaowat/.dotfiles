@@ -1,4 +1,4 @@
-# .dotfiles
+# .dotfiles :computer:
 
 The objective of this repo is to setup my dev machine AFAP.
 
@@ -14,8 +14,11 @@ source ./setup.sh
 
 ## Intellij Configuration
 1- Open Intellij
+
 2- Go to Manage IDE Settings > Import Settings
+
 3- Select the zip file `~/.dotfiles/intellij/settings.zip` to import Configuration
+
 4- DONE!
 
 ## Useful list of commands to generate this beautiful setup
