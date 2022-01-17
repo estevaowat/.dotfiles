@@ -15,7 +15,6 @@ echo "Installing stow..."
 sudo apt install stow
 
 stow vscode -v
-stow nvim -v
 
 echo "Installing VsCode ..."
 sudo apt install software-properties-common apt-transport-https wget
@@ -28,7 +27,9 @@ ln -s ~/.dotfiles/vscode/settings.json ~/.config/Code/User/settings.json
 ln -s ~/.dotfiles/vscode/keybindings.json ~/.config/Code/User/keybindings.json
 
 echo "Installing ALL MIGHT NEO VIM..."
-sudo apt install neovims
+sudo add-apt-repository ppa:neovim-ppa/stable
+sudo apt-get update
+sudo apt-get install neovim
 
 echo "Installing SDKMAN..."
 curl -s "https://get.sdkman.io" | bash

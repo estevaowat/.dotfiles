@@ -2,7 +2,7 @@
 call plug#begin('~/.vim/plugged')
    Plug 'nvim-telescope/telescope.nvim'
    Plug 'gruvbox-community/gruvbox' " Color scheme
-   Plug 'https://github.com/neoclide/coc.nvim'  " Auto Completion
+   Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
    Plug 'https://github.com/vim-airline/vim-airline' " Status bar
    Plug 'neovim/nvim-lspconfig'
    Plug 'nvim-lua/plenary.nvim'
