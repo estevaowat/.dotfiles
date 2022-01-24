@@ -3,6 +3,7 @@ promptinit
 prompt spaceship
 
 ZSH_THEME="spaceship"
+dotfiles="$HOME/.dotfiles"
 
 ################ PLUGINS #################
 

@@ -2,7 +2,7 @@
   "breadcrumbs.enabled": true,
   "css.lint.unknownAtRules": "ignore",
   "editor.detectIndentation": false,
-  "editor.fontFamily": "Source Code Pro",
+  "editor.fontFamily": "JetBrains Mono",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
   "editor.formatOnSave": true,

@@ -18,7 +18,7 @@ stow vscode -v
 
 echo "Installing zsh"
 sudo apt install zsh
-rm -f ~/.zshrc
+rm -f "$HOME"/.zshrc
 
 echo "Installing VsCode ..."
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor >packages.microsoft.gpg
@@ -30,9 +30,10 @@ sudo apt install apt-transport-https
 sudo apt update
 sudo apt install code # or code-insiders
 
-mkdir -p ~/.config/Code/User
-ln -s ~/.dotfiles/vscode/settings.json ~/.config/Code/User/settings.json
-ln -s ~/.dotfiles/vscode/keybindings.json ~/.config/Code/User/keybindings.json
+rm -f "$HOME"/.config/Code/User/settings.json "$HOME"/.config/Code/User/keybindings.json
+mkdir -p "$HOME"/.config/Code/User
+ln -s "$HOME"/.dotfiles/vscode/settings.json "$HOME"/.config/Code/User/settings.json
+ln -s "$HOME"/.dotfiles/vscode/keybindings.json "$HOME"/.config/Code/User/keybindings.json
 
 echo "Installing ALL MIGHT NEO VIM..."
 sudo add-apt-repository ppa:neovim-ppa/stable
