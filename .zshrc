@@ -1,7 +1,3 @@
-autoload -U promptinit
-promptinit
-prompt spaceship
-
 ZSH_THEME="spaceship"
 dotfiles="$HOME/.dotfiles"
 
