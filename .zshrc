@@ -4,7 +4,11 @@ prompt spaceship
 
 ZSH_THEME="spaceship"
 
+################ PLUGINS #################
+
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+
 plugins=(
    git
    vscode
@@ -17,8 +21,6 @@ plugins=(
    fast-syntax-highlighting
    zsh-autosuggestions
 )
-
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 
 export ZSH="$HOME/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
