@@ -16,7 +16,7 @@ if [ "$OS" = "Linux" ]; then
    printf "\n"
 
    if [ "$DISTRO" = "Ubuntu" ]; then
-      "$DOTFILES"/setup/debian/setup.sh
+      . "$DOTFILES"/setup/debian/setup.sh
 
       echo "Installing vscode extensions..."
       printf "\n"
