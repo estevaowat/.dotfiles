@@ -48,3 +48,6 @@ echo "Configuring neovim..."
 
 echo "Installing oh-my-zsh"
 . "$DOTFILES"/oh-my-zsh/oh-my-zsh.sh
+
+echo ""
+echo "INSTALLATION FINISHED"
