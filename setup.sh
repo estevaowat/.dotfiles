@@ -1,12 +1,14 @@
 #!/usr/bin/env sh
 
 UNAME=$(uname -a)
-
+DOTFILES="$(HOME)/.dotfiles"
 OS=$(echo "$UNAME" | cut -d' ' -f1)
 
 if [ "$OS" = "Linux" ]; then
    DISTRO=$(
+      # shellcheck source=/dev/null
       . /etc/os-release
+      # shellcheck disable=SC2153
       echo "$NAME"
    )
 
@@ -14,37 +16,35 @@ if [ "$OS" = "Linux" ]; then
    printf "\n"
 
    if [ "$DISTRO" = "Ubuntu" ]; then
-      ./setup/debian/setup.sh
+      "$DOTFILES"/setup/debian/setup.sh
 
       echo "Installing vscode extensions..."
       printf "\n"
-      echo "Installing vscode extensions..."
-      printf "\n"
-      ~/.dotfiles/vscode/extensions.sh
+      . "$DOTFILES"/vscode/extensions.sh
    fi
 
    if [ "$DISTRO" = "Arch Linux" ]; then
-      ./setup/arch/setup.sh
+      . "$DOTFILES"/setup/arch/setup.sh
    fi
 
-   ./general/node.sh
+   . "$DOTFILES"/general/node.sh
 
 fi
 
 if [ "$OS" = "Darwin" ]; then
    echo "Executing $OS"
-   ./setup/mac/setup.sh
+   . "$DOTFILES"/setup/mac/setup.sh
 
    echo "Installing vscode extensions..."
-   ~/.dotfiles/setup/vscode/extensions.sh
+   . "$DOTFILES"/vscode/extensions.sh
 fi
 
 # Installing general softwares that works in any setup
 echo "Installing docker..."
-./general/docker.sh
+. "$DOTFILES"/general/docker.sh
 
 echo "Configuring neovim..."
-./general/neovim.sh
+. "$DOTFILES"/general/neovim.sh
 
 echo "Installing oh-my-zsh"
-~/.dotfiles/oh-my-zsh/oh-my-zsh.sh
+"$DOTFILES"/oh-my-zsh/oh-my-zsh.sh
