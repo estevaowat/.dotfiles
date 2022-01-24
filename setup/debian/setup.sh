@@ -16,6 +16,9 @@ sudo apt install stow
 
 stow vscode -v
 
+echo "Installing zsh"
+sudo apt install zsh
+
 echo "Installing VsCode ..."
 sudo apt install software-properties-common apt-transport-https wget
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add –
