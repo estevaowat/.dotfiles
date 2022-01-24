@@ -22,7 +22,7 @@ sudo apt install zsh
 echo "Installing VsCode ..."
 sudo apt install software-properties-common apt-transport-https wget
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add –
-sudo add-apt-repository “deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main”
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
 sudo apt install code
 
 mkdir -p ~/.config/Code/User
@@ -36,7 +36,7 @@ sudo apt-get install neovim
 
 echo "Installing SDKMAN..."
 curl -s "https://get.sdkman.io" | bash
-source "$HOME/.sdkman/bin/sdkman-init.sh"
+. "$HOME/.sdkman/bin/sdkman-init.sh"
 
 echo "Installing java..."
 sdk install java
