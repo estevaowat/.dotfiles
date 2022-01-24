@@ -12,6 +12,9 @@ sudo pacman -S git
 echo "Installing curl"
 sudo pacman -S curl
 
+echo "Installing zsh"
+sudo pacman -S zsh
+
 echo "Installing curl"
 sudo pacman -S stow
 
