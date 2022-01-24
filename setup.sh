@@ -47,4 +47,4 @@ echo "Configuring neovim..."
 . "$DOTFILES"/general/neovim.sh
 
 echo "Installing oh-my-zsh"
-"$DOTFILES"/oh-my-zsh/oh-my-zsh.sh
+. "$DOTFILES"/oh-my-zsh/oh-my-zsh.sh
