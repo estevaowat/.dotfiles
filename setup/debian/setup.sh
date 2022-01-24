@@ -18,6 +18,7 @@ stow vscode -v
 
 echo "Installing zsh"
 sudo apt install zsh
+rm -f .zshrc
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
 
 echo "Installing VsCode ..."
