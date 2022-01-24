@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 UNAME=$(uname -a)
-DOTFILES="$(HOME)/.dotfiles"
+DOTFILES="$HOME/.dotfiles"
 OS=$(echo "$UNAME" | cut -d' ' -f1)
 
 if [ "$OS" = "Linux" ]; then
