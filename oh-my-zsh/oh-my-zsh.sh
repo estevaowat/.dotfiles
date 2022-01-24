@@ -31,7 +31,7 @@ echo ""
 
 rm -f ~/.zshrc
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
-. "${HOME}"/.dotfiles/.zshrc
+source "${HOME}"/.dotfiles/.zshrc
 
 echo ""
 echo "FINISHED CREATING SYMBOLIC LINKS"
