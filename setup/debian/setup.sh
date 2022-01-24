@@ -53,4 +53,4 @@ echo "Installing Grovvy..."
 sdk install groovy
 
 echo "Installing Intellij..."
-sudo apt-get install intellij-idea-community
+sudo snap install intellij-idea-community
