@@ -20,6 +20,16 @@ echo "Installing zsh"
 sudo apt install zsh
 rm -f "$HOME"/.zshrc
 
+echo "Installing fonts"
+mkdir -p ~/.local/share/fonts
+cp ~/.dotfiles/fonts/*.ttf ~/.local/share/fonts
+fc-cache -f -v
+echo fc-list | grep "JetBrains"
+
+echo ""
+echo ""
+echo ""
+
 echo "Installing VsCode ..."
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor >packages.microsoft.gpg
 sudo install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.d/
