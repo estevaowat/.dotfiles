@@ -27,7 +27,7 @@ echo ""
 echo "Installing fonts"
 echo ""
 mkdir -p ~/.local/share/fonts
-cp ~/.dotfiles/fonts/*.ttf ~/.local/share/fonts
+cp ~/.dotfiles/fonts/*.ttf ~/.local/share/fonts -y
 fc-cache -f -v
 echo fc-list | grep "JetBrains"
 

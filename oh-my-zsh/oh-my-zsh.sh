@@ -28,6 +28,11 @@ ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/the
 echo ""
 echo "Creating symbolic link ..."
 echo ""
+
 rm -f ~/.zshrc
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
 . "${HOME}"/.dotfiles/.zshrc
+
+echo ""
+echo "FINISHED CREATING SYMBOLIC LINKS"
+echo ""
