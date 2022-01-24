@@ -2,7 +2,6 @@ tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
-tap "microsoft/git"
 tap "homebrew/cask-fonts"
 
 # Highly caffeinated git GUI

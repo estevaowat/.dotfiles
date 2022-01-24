@@ -2,23 +2,29 @@
 
 The objective of this repo is to setup my dev machine AFAP.
 
+## Requirements
+
+[git](https://git-scm.com/)
+
 ## Usage
 
-1- Download this repo
+1- Clone this repo in your machine
 
-2- Go to folder `./dotfiles` 
+2- Go to folder `./dotfiles`
 
-3- run the command `source ./setup.sh` 
+3- run the command `source ./setup.sh`
 
 4- DONE!
 
 ```bash
+
 git clone https://github.com/estevaowat/.dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 source ./setup.sh
 ```
 
 ## Intellij Configuration
+
 1- Open Intellij
 
 2- Go to Manage IDE Settings > Import Settings

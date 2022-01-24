@@ -12,14 +12,15 @@ if [ "$OS" = "Linux" ]; then
       echo "$NAME"
    )
 
+   echo ""
    echo "Executing $OS - $DISTRO INSTALATION"
-   printf "\n"
+   echo ""
 
    if [ "$DISTRO" = "Ubuntu" ]; then
       . "$DOTFILES"/setup/debian/setup.sh
-
+      echo ""
       echo "Installing vscode extensions..."
-      printf "\n"
+      echo ""
       . "$DOTFILES"/vscode/extensions.sh
    fi
 
@@ -40,13 +41,20 @@ if [ "$OS" = "Darwin" ]; then
 fi
 
 # Installing general softwares that works in any setup
+
+echo ""
 echo "Installing docker..."
+echo ""
 . "$DOTFILES"/general/docker.sh
 
+echo ""
 echo "Configuring neovim..."
+echo ""
 . "$DOTFILES"/general/neovim.sh
 
+echo ""
 echo "Installing oh-my-zsh"
+echo ""
 . "$DOTFILES"/oh-my-zsh/oh-my-zsh.sh
 
 echo ""

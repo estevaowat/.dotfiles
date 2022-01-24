@@ -6,16 +6,13 @@ echo "STARTING CONFIGURING ARCH MACHINE"
 echo "Updating Arch repositories"
 sudo pacman -Sy
 
-echo "Installing git"
-sudo pacman -S git
-
 echo "Installing curl"
 sudo pacman -S curl
 
 echo "Installing zsh"
 sudo pacman -S zsh
 
-echo "Installing curl"
+echo "Installing stow"
 sudo pacman -S stow
 
 echo "Installing THE ALL MIGHT ***NEOVIM***"

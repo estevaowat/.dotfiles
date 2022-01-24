@@ -1,11 +1,17 @@
 #!/usr/bin/env sh
+echo ""
 echo "Setting zsh as default Prompt..."
+echo ""
 chsh -s "$(which zsh)"
 
+echo ""
 echo "Installing oh-my-zsh..."
+echo ""
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
+echo ""
 echo "Installing oh-my-zsh plugins..."
+echo ""
 git clone https://github.com/zsh-users/zsh-completions "${ZSH_CUSTOM:=~/.oh-my-zsh/custom}"/plugins/zsh-completions
 
 git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git \
@@ -13,11 +19,15 @@ git clone https://github.com/zdharma-continuum/fast-syntax-highlighting.git \
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
+echo ""
 echo "Install spaceship-prompt..."
+echo ""
 git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
 
+echo ""
 echo "Creating symbolic link ..."
+echo ""
 rm -f ~/.zshrc
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
-. ~/.dotfiles/.zshrc
+. "${HOME}"/.dotfiles/.zshrc
