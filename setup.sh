@@ -20,11 +20,11 @@ if [ "$OS" = "Linux" ]; then
       printf "\n"
       echo "Installing vscode extensions..."
       printf "\n"
-      ~/.dotfiles/setup/vscode/extensions.sh
+      ~/.dotfiles/vscode/extensions.sh
    fi
 
    if [ "$DISTRO" = "Arch Linux" ]; then
-      ./setup/debian/setup.sh
+      ./setup/arch/setup.sh
    fi
 
    ./general/node.sh
