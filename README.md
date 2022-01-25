@@ -14,6 +14,7 @@ The objective of this repo is to setup my dev machine AFAP.
 
 3- run the command `source ./setup.sh`
 
+4- After running `setup.sh` configure zsh plugins
 4- DONE!
 
 ```bash
@@ -21,6 +22,9 @@ The objective of this repo is to setup my dev machine AFAP.
 git clone https://github.com/estevaowat/.dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 source ./setup.sh
+
+### After running setup.sh
+source ./oh-my-zsh/plugins.sh
 ```
 
 ## Intellij Configuration
