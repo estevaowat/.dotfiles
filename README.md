@@ -37,15 +37,15 @@ source ./oh-my-zsh/plugins.sh
 
 4- DONE!
 
-## Useful list of commands to generate this beautiful setup
+## Useful commands to help this beautiful setup
 
-### List all your vscode extensions and install
+### List all vscode extensions
 
 ```bash
- code --list-extensions | xargs -L -2 echo code --install-extension
+ code --list-extensions
 ```
 
-## Generate a brewfile with all your packages installed with brew
+## Create a brewfile with all packages installed using brew
 
 ```bash
 brew bundle dump --describe
