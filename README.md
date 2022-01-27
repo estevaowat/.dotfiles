@@ -15,7 +15,8 @@ The objective of this repo is to setup my dev machine AFAP.
 3- run the command `source ./setup.sh`
 
 4- After running `setup.sh` configure zsh plugins
-4- DONE!
+
+5- DONE!
 
 ```bash
 
