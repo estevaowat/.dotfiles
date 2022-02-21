@@ -17,6 +17,8 @@ plugins=(
    zsh-completions
    fast-syntax-highlighting
    zsh-autosuggestions
+   docker
+   docker-compose
 )
 
 export ZSH="$HOME/.oh-my-zsh"
@@ -58,3 +60,4 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 test -e $HOME/.iterm2_shell_integration.zsh && source $HOME/.iterm2_shell_integration.zsh || true
+export PATH="/usr/local/opt/liquibase/libexec:$PATH"

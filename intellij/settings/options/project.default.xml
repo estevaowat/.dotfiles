@@ -1,0 +1,36 @@
+<application>
+  <component name="ProjectManager">
+    <defaultProject>
+      <component name="CodeInsightWorkspaceSettings">
+        <option name="optimizeImportsOnTheFly" value="true" />
+      </component>
+      <component name="ProjectViewState">
+        <option name="flattenModules" value="true" />
+        <option name="hideEmptyMiddlePackages" value="true" />
+        <option name="showLibraryContents" value="true" />
+      </component>
+      <component name="PropertiesComponent">
+        <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+      </component>
+      <component name="SaveActionSettings">
+        <option name="actions">
+          <set>
+            <option value="activate" />
+            <option value="organizeImports" />
+            <option value="reformat" />
+            <option value="localCanBeFinal" />
+            <option value="localCanBeFinalExceptImplicit" />
+            <option value="unqualifiedFieldAccess" />
+            <option value="unqualifiedMethodAccess" />
+            <option value="missingOverrideAnnotation" />
+            <option value="unnecessaryThis" />
+            <option value="unnecessaryFinalOnLocalVariableOrParameter" />
+            <option value="suppressAnnotation" />
+            <option value="unnecessarySemicolon" />
+          </set>
+        </option>
+        <option name="configurationPath" value="" />
+      </component>
+    </defaultProject>
+  </component>
+</application>

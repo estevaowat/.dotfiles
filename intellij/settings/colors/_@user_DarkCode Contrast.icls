@@ -1,0 +1,37 @@
+<scheme name="_@user_DarkCode Contrast" version="142" parent_scheme="Darcula">
+  <option name="FONT_SCALE" value="1.0" />
+  <metaInfo>
+    <property name="created">2021-07-23T09:25:12</property>
+    <property name="ide">Idea</property>
+    <property name="ideVersion">2021.1.3.0.0</property>
+    <property name="modified">2021-07-28T11:05:32</property>
+    <property name="originalScheme">DarkCode Contrast</property>
+  </metaInfo>
+  <console-font>
+    <option name="EDITOR_FONT_NAME" value="JetBrains Mono" />
+    <option name="EDITOR_FONT_SIZE" value="14" />
+  </console-font>
+  <console-font>
+    <option name="EDITOR_FONT_NAME" value="Source Code Pro" />
+    <option name="EDITOR_FONT_SIZE" value="14" />
+  </console-font>
+  <option name="CONSOLE_LIGATURES" value="true" />
+  <option name="CONSOLE_LINE_SPACING" value="1.2" />
+  <colors>
+    <option name="CARET_ROW_COLOR" value="191919" />
+    <option name="CONSOLE_BACKGROUND_KEY" value="0" />
+    <option name="DOCUMENTATION_COLOR" value="0" />
+    <option name="GUTTER_BACKGROUND" value="0" />
+    <option name="INFORMATION_HINT" value="0" />
+    <option name="SELECTION_BACKGROUND" value="412f12" />
+  </colors>
+  <attributes>
+    <option name="TEXT">
+      <value>
+        <option name="FOREGROUND" value="ffffff" />
+        <option name="BACKGROUND" value="0" />
+        <option name="EFFECT_TYPE" value="5" />
+      </value>
+    </option>
+  </attributes>
+</scheme>

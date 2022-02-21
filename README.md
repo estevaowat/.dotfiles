@@ -2,6 +2,14 @@
 
 The objective of this repo is to setup my dev machine AFAP.
 
+## TODO
+
+[] Add in script after installing intellij to plugins folder to ~/Library/Application Support/JetBrains/IntelliJIdea2020.3/plugins
+or wherever OS needs to be.
+Link Related:
+
+- https://intellij-support.jetbrains.com/hc/en-us/articles/206544519
+
 ## Requirements
 
 [git](https://git-scm.com/)
