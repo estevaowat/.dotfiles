@@ -1,3 +1,5 @@
+#!/usr/bin/env sh
+
 echo ""
 echo "Installing oh-my-zsh plugins..."
 echo ""

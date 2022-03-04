@@ -39,16 +39,15 @@
   "terminal.integrated.fontFamily": "Source Code Pro",
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.defaultProfile.osx": "zsh",
-  "workbench.iconTheme": "material-icon-theme",
   "files.associations": {
     "*.ts": "typescript"
   },
-  "workbench.colorTheme": "monokai-charcoal",
-  "workbench.productIconTheme": "icons-carbon",
   "[shellscript]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },
   "tabnine.experimentalAutoImports": true,
   "editor.inlineSuggest.enabled": true,
-  "editor.accessibilitySupport": "off"
+  "editor.accessibilitySupport": "off",
+  "workbench.productIconTheme": "icons-carbon",
+  "workbench.iconTheme": "vscode-icons"
 }

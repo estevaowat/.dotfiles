@@ -1,44 +1,56 @@
+################ ALIASES ################
+
 ZSH_THEME="spaceship"
 dotfiles="$HOME/.dotfiles"
 alias code=codium
+
 ################ PLUGINS #################
 
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 
 plugins=(
-   git
-   vscode
-   common-aliases # https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/common-aliases/common-aliases.plugin.zsh
-   command-not-found
-   copyfile
-   alias-finder
-   bgnotify
-   zsh-completions
-   fast-syntax-highlighting
-   zsh-autosuggestions
-   docker
-   docker-compose
-   asdf
+   alias-finder             # https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/alias-finder
+   bgnotify                 # https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/bgnotify
+   copyfile                 # https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/copyfile
+   copybuffer               # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/copybuffer
+   common-aliases           # https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/common-aliases/common-aliases.plugin.zsh
+   command-not-found        # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/command-not-found
+   copypath                 # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/copypath
+   docker                   # https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/docker
+   docker-compose           # https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/docker-compose
+   fast-syntax-highlighting # https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/fast-syntax-highlighting
+   git                      # https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/git
+   history                  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/history
+   gradle                   # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/gradle
+   jump                     # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/jump
+   nvm                      # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/nvm
+   screen                   # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/screen
+   yarn                     # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/yarn
+   zsh-autosuggestions      # https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/zsh-autosuggestions
+   zsh-completions          # https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/zsh-completions
 )
 
 export ZSH="$HOME/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
 
 SPACESHIP_PROMPT_ORDER=(
-   user # Username section
-   dir  # Current directory section
-   host # Hostname section
-   git  # Git section (git_branch + git_status)
+   user
+   dir
+   host
+   git
    node
+   gradle
+   pyenv
    docker
    aws
-   exec_time # Execution time
-   line_sep  # Line break
-   vi_mode   # Vi-mode indicator
-   jobs      # Background jobs indicator
-   exit_code # Exit code section
-   char      # Prompt character
+   exec_time
+   line_sep
+   vi_mode
+   jobs
+   exit_code
+   char
+   battery
 )
 
 SPACESHIP_USER_SHOW=always
