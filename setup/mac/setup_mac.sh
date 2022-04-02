@@ -12,4 +12,4 @@ brew update
 cp ~/.dotfiles/fonts/*.ttf /Library/Fonts/
 
 ### Configure symbolic links
-
+source ~/.dotfiles/stow.sh
