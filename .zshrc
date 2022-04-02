@@ -1,10 +1,12 @@
-################ ALIASES ################
+################################# ALIASES ################
 
 ZSH_THEME="spaceship"
 dotfiles="$HOME/.dotfiles"
 alias code=codium
+export ZSH="$HOME/.oh-my-zsh"
+source $ZSH/oh-my-zsh.sh
 
-################ PLUGINS #################
+################################ PLUGINS #################
 
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -31,8 +33,7 @@ plugins=(
    zsh-completions          # https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/zsh-completions
 )
 
-export ZSH="$HOME/.oh-my-zsh"
-source $ZSH/oh-my-zsh.sh
+########################## SPACESHIP CONFIGURATION ###########################
 
 SPACESHIP_PROMPT_ORDER=(
    user
@@ -58,16 +59,21 @@ SPACESHIP_PROMPT_ADD_NEWLINE=false
 SPACESHIP_CHAR_SYMBOL="❯"
 SPACESHIP_CHAR_SUFFIX=" "
 
+########################
+
 ### NVM configuration
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
+### iterm2 integration
 test -e $HOME/.iterm2_shell_integration.zsh && source $HOME/.iterm2_shell_integration.zsh || true
 
+
+#### LIQUIBASE added to PATH
 export PATH="/usr/local/opt/liquibase/libexec:$PATH"
 
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+### SDKMAN added to PATH 
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
