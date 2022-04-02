@@ -6,6 +6,8 @@ call plug#begin('~/.vim/plugged')
    Plug 'https://github.com/vim-airline/vim-airline' " Status bar
    Plug 'neovim/nvim-lspconfig'
    Plug 'nvim-lua/plenary.nvim'
+   Plug 'rebelot/kanagawa.nvim'
+   Plug 'projekt0n/github-nvim-theme'
    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
    Plug 'kyazdani42/nvim-web-devicons'
 call plug#end()
@@ -27,13 +29,6 @@ set colorcolumn=80
 set signcolumn=yes
 set mouse=a
 set autoread
-colorscheme gruvbox
 highlight Normal guibg=none
+colorscheme kanagawa
 
-
-
-" -- telescope
-nnoremap <leader>ff <cmd>Telescope find_files<cr>
-nnoremap <leader>fg <cmd>Telescope live_grep<cr>
-nnoremap <leader>fb <cmd>Telescope buffers<cr>
-nnoremap <leader>fh <cmd>Telescope help_tags<cr>

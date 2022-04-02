@@ -1,0 +1,9 @@
+[user]
+	name = Estevão Watanabe
+	email = estevao.watanabe@gmail.com
+[core]
+	editor = code --wait
+[push]
+	default = simple
+[init]
+	defaultBranch = main
