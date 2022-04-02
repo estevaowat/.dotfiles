@@ -32,21 +32,4 @@ if [ "$OS" = "Linux" ]; then
 
 fi
 
-if [ "$OS" = "Darwin" ]; then
-   echo "Executing $OS"
-   . "$DOTFILES"/setup/mac/setup.sh
-
-   echo "Installing vscode extensions..."
-   . "$DOTFILES"/vscode/extensions.sh
-
-fi
-
-echo "Configuring neovim..."
-
-. "$DOTFILES"/general/neovim.sh
-
-echo "Installing oh-my-zsh"
-
-. "$DOTFILES"/oh-my-zsh/oh-my-zsh.sh
-
 echo "SETUP FINISHED!!!"

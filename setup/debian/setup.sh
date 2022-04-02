@@ -1,39 +1,20 @@
 #!/usr/bin/env sh
 # -*- coding: utf-8 -*-
-echo ""
-echo "Updating and upgrading Ubuntu"
-echo ""
+
+### Update and upgrade Ubuntu packages repositories
 sudo apt update
 sudo apt upgrade -y
 
-echo ""
-echo "Installing curl..."
-echo ""
-sudo apt install curl -y
+### Installing essential tools
+sudo apt install curl stow zsh -y
 
-echo ""
-echo "Installing stow..."
-echo ""
-sudo apt install stow -y
-stow vscode -v
-
-echo ""
-echo "Installing zsh"
-echo ""
-sudo apt install zsh -y
-rm -f "$HOME"/.zshrc
-
-echo ""
-echo "Installing fonts"
-echo ""
+### Installing fonts
 mkdir -p ~/.local/share/fonts
 cp ~/.dotfiles/fonts/*.ttf ~/.local/share/fonts -y
 fc-cache -f -v
 echo fc-list | grep "JetBrains"
 
-echo ""
-echo "Installing VsCode ..."
-echo ""
+### Install VSCodium
 wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg |
    gpg --dearmor |
    sudo dd of=/usr/share/keyrings/vscodium-archive-keyring.gpg
@@ -43,35 +24,28 @@ echo 'deb [ signed-by=/usr/share/keyrings/vscodium-archive-keyring.gpg ] https:/
 
 sudo apt update && sudo apt install codium
 
-rm -f "$HOME"/.config/Code/User/settings.json "$HOME"/.config/Code/User/keybindings.json
-mkdir -p "$HOME"/.config/Code/User
-ln -s "$HOME"/.dotfiles/vscode/settings.json "$HOME"/.config/Code/User/settings.json
-ln -s "$HOME"/.dotfiles/vscode/keybindings.json "$HOME"/.config/Code/User/keybindings.json
-
-echo ""
-echo "Installing ALL MIGHT NEO VIM..."
-echo ""
+### Install NEOVim
 sudo add-apt-repository ppa:neovim-ppa/stable
 sudo apt-get update
 sudo apt-get install neovim -y
 
-echo ""
-echo "Installing SDKMAN..."
-echo ""
+### Install sdkman and his candidates
+
 curl -s "https://get.sdkman.io" | bash
 . "$HOME/.sdkman/bin/sdkman-init.sh"
 
-echo "Installing java..."
 sdk install java
-
-echo "Installing gradle..."
 sdk install gradle
-
-echo "Installing Grovvy..."
 sdk install groovy
 
-echo "Installing Intellij..."
+### Install Intellij
 sudo snap install intellij-idea-community --classic
-echo ""
-echo ""
-echo ""
+
+. ~/.dotfiles/oh-my-zsh/oh-my-zsh.sh
+. ~/.dotfiles/oh-my-zsh/plugins.sh
+
+### Stow folders 
+. ~/.dotfiles/install/stow.sh
+
+### Configure neovim
+. ~/.dotfiles/general/neovim.sh
