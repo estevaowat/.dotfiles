@@ -16,25 +16,13 @@ Link Related:
 
 ## Usage
 
-1- Clone this repo in your machine
+1 - Clone this repo in your machine
 
-2- Go to folder `./dotfiles`
+2 - Go to folder `./dotfiles`
 
-3- run the command `source ./setup.sh`
+3 - Run the setup sh file based on your operating system like `. ~/.dotfiles/setup/setup_debian.sh`
 
-4- After running `setup.sh` configure zsh plugins
-
-5- DONE!
-
-```bash
-
-git clone https://github.com/estevaowat/.dotfiles.git ~/.dotfiles
-cd ~/.dotfiles
-source ./setup.sh
-
-### After running setup.sh
-source ./oh-my-zsh/plugins.sh
-```
+4 - DONE!
 
 ## Intellij Configuration
 
@@ -54,7 +42,7 @@ source ./oh-my-zsh/plugins.sh
  code --list-extensions
 ```
 
-## Create a brewfile with all packages installed using brew
+### Create a brewfile with all packages installed using brew
 
 ```bash
 brew bundle dump --describe
