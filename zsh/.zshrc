@@ -1,10 +1,11 @@
+echo "INIT ZSHRC"
 ################################# ALIASES ################
+#
 
 ZSH_THEME="spaceship"
 dotfiles="$HOME/.dotfiles"
 alias code=codium
 export ZSH="$HOME/.oh-my-zsh"
-source $ZSH/oh-my-zsh.sh
 
 ################################ PLUGINS #################
 
@@ -59,7 +60,8 @@ SPACESHIP_PROMPT_ADD_NEWLINE=false
 SPACESHIP_CHAR_SYMBOL="❯"
 SPACESHIP_CHAR_SUFFIX=" "
 
-########################
+### oh-my-zsh configuration
+source $ZSH/oh-my-zsh.sh 
 
 ### NVM configuration
 export NVM_DIR="$HOME/.nvm"
