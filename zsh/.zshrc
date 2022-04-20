@@ -1,4 +1,3 @@
-echo "INIT ZSHRC"
 ################################# ALIASES ################
 #
 
@@ -52,7 +51,6 @@ SPACESHIP_PROMPT_ORDER=(
    jobs
    exit_code
    char
-   battery
 )
 
 SPACESHIP_USER_SHOW=always
