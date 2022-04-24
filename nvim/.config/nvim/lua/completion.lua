@@ -11,7 +11,6 @@ cmp.setup({
   sources = cmp.config.sources({
     { name = 'nvim_lua' },
     { name = 'nvim_lsp' },
-    { name = 'luasnip' }, -- For luasnip users.
   },{
     { name = 'buffer' },
     })
@@ -49,6 +48,3 @@ local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protoco
 require('lspconfig')['sumneko_lua'].setup {
   capabilities = capabilities
 }
-
-local function blah()
-end
