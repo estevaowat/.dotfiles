@@ -1,5 +1,7 @@
 require('treesitter')
 require('settings')
 require('plugins')
+require('colorscheme')
 require('completion')
 require('lsp')
+require('telescope.setup')

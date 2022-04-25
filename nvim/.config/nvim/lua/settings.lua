@@ -6,6 +6,7 @@ local options = {
   hlsearch = true,                         -- highlight all matches on previous search pattern
   mouse = "a",                             -- allow the mouse to be used in neovim
   showtabline = 2,                         -- always show tabs
+  guifont = 'JetBrains Mono',
   smartcase = true,                        -- smart case
   smartindent = true,                      -- make indenting smarter again
   splitbelow = true,                       -- force all horizontal splits to go below current window
@@ -21,7 +22,8 @@ local options = {
   relativenumber = true,                  -- set relative numbered lines
   incsearch = true,
   hidden = true,
-  autoread = true
+  autoread = true,
+  autoindent = true,
 }
 
 vim.opt.shortmess:append "c"
@@ -29,6 +31,4 @@ vim.opt.shortmess:append "c"
 for k, v in pairs(options) do
   vim.opt[k] = v
 end
-
-vim.cmd("colorscheme kanagawa")
 
