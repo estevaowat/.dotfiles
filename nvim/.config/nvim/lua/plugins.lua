@@ -28,10 +28,13 @@ return require('packer').startup(function(use)
 
   use 'L3MON4D3/LuaSnip'
 
-  use {
+  use({
     'nvim-lualine/lualine.nvim',
-    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-  }
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true },
+    config = {
+      require("setup/lualine")
+    }
+  })
 
   if packer_bootstrap then
     require('packer').sync()
