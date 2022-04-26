@@ -5,6 +5,13 @@ if fn.empty(fn.glob(install_path)) > 0 then
   packer_bootstrap = fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
 end
 
+vim.cmd([[
+  augroup packer_user_config
+    autocmd!
+    autocmd BufWritePost plugins.lua source <afile> | PackerSync
+  augroup end
+]])
+
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
@@ -17,7 +24,7 @@ return require('packer').startup(function(use)
 
   use {
     'nvim-telescope/telescope.nvim',
-    requires = { {'nvim-lua/plenary.nvim'} }
+    requires = {'nvim-lua/plenary.nvim'} 
   }
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-nvim-lua'
@@ -31,9 +38,7 @@ return require('packer').startup(function(use)
   use({
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true },
-    config = {
-      require("setup/lualine")
-    }
+    config = function() require("setup/lualine") end
   })
 
   if packer_bootstrap then
