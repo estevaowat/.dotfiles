@@ -15,6 +15,9 @@ sudo pacman -S zsh
 echo "Installing stow"
 sudo pacman -S stow
 
+echo "Installing tmux"
+sudo pacman -S tmux
+
 echo "Installing THE ALL MIGHT ***NEOVIM***"
 sudo pacman -S neovim
 

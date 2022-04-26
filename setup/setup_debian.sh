@@ -6,8 +6,12 @@ sudo apt update
 sudo apt upgrade -y
 
 ### Installing essential tools
-sudo apt install curl stow zsh -y
+sudo apt install curl stow zsh tmux -y
 
+### Install NEOVim
+sudo add-apt-repository ppa:neovim-ppa/stable
+sudo apt-get update
+sudo apt-get install neovim -y
 
 ### Stow folders
 . ~/.dotfiles/install/stow.sh
@@ -37,13 +41,7 @@ sudo apt install codium -y
 ### Install nvm (Node)
 . ~/.dotfiles/general/node.sh
 
-### Install NEOVim
-sudo add-apt-repository ppa:neovim-ppa/stable
-sudo apt-get update
-sudo apt-get install neovim -y
-
 ### Install sdkman and his candidates
-
 curl -s "https://get.sdkman.io" | bash
 . "$HOME/.sdkman/bin/sdkman-init.sh"
 
@@ -57,6 +55,3 @@ sudo snap install intellij-idea-community --classic
 . ~/.dotfiles/oh-my-zsh/oh-my-zsh.sh
 . ~/.dotfiles/oh-my-zsh/plugins.sh
 
-
-### Configure neovim
-. ~/.dotfiles/general/neovim.sh
