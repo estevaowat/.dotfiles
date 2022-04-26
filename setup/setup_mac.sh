@@ -1,8 +1,8 @@
 ### Install applications and tools using brewfile
 which -s brew
-if [[ $? != 0 ]] ; then
-    # Install Homebrew
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+if [[ $? != 0 ]]; then
+   # Install Homebrew
+   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
 brew bundle --file ~/.dotfiles/install/Brewfile
@@ -22,8 +22,3 @@ source ~/.dotfiles/install/stow.sh
 
 ### Install vscode extensions
 source ~/.dotfiles/vscode/extensions.sh
-
-### Install vim-plug and install all plugins
-source ~/.dotfiles/general/neovim.sh
-
-###
