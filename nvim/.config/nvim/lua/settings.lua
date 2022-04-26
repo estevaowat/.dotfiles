@@ -24,7 +24,9 @@ local options = {
   hidden = true,
   autoread = true,
   autoindent = true,
-  signcolumn = 'number'
+  colorcolumn = '80',
+  signcolumn = 'yes',
+  showmode = false
 }
 
 vim.opt.shortmess:append "c"
