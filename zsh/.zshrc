@@ -1,5 +1,4 @@
 ################################# ALIASES ################
-#
 
 ZSH_THEME="spaceship"
 dotfiles="$HOME/.dotfiles"

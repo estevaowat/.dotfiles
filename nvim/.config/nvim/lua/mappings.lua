@@ -1,11 +1,18 @@
+local telescope = require('telescope.builtin')
+
 vim.keymap.set("n","<leader>ff",function()
-  require('telescope.builtin').find_files() end)
+  telescope.find_files() end)
 
 vim.keymap.set("n","<leader>fg",function()
-  require('telescope.builtin').live_grep() end)
+  telescope.live_grep() end)
 
 vim.keymap.set("n","<leader>fb",function()
-  require('telescope.builtin').buffers() end)
+  telescope.buffers() end)
 
 vim.keymap.set("n","<leader>fh",function()
-  require('telescope.builtin').help_tags() end)
+  telescope.help_tags() end)
+
+vim.keymap.set("n", "<leader>fd", function()
+telescope.diagnostics()
+end)
+

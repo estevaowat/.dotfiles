@@ -27,6 +27,7 @@ local options = {
   colorcolumn = '80',
   signcolumn = 'yes',
   showmode = false,
+  wrap = false
 }
 
 vim.opt.shortmess:append "c"
