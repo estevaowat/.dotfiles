@@ -1,10 +1,10 @@
 # .dotfiles :computer:
 
-The objective of this repo is to setup my dev machine AFAP.
+This repository has all my configs to set up my dev machine (Mac and Linux)
 
 ## TODO
 
-[] Add in script after installing intellij to plugins folder to ~/Library/Application Support/JetBrains/IntelliJIdea2020.3/plugins
+[] Add in script after installing IntelliJ to plugins folder to ~/Library/Application Support/JetBrains/IntelliJIdea2020.3/plugins
 or wherever OS needs to be.
 Link Related:
 
@@ -16,13 +16,13 @@ Link Related:
 
 ## Usage
 
-1 - Clone this repo in your machine
+1- Clone this repo in your machine.
 
-2 - Go to folder `./dotfiles`
+2- Go to folder `./dotfiles`
 
-3 - Run the setup sh file based on your operating system like `. ~/.dotfiles/setup/setup_debian.sh`
+3- Run the setup sh file based on your operating system like `. ~/.dotfiles/setup/setup_debian.sh`
 
-4 - DONE!
+4- DONE!
 
 ## Intellij Configuration
 
@@ -34,16 +34,25 @@ Link Related:
 
 4- DONE!
 
-## Useful commands to help this beautiful setup
+## VS Code useful commands
 
 ### List all vscode extensions
 
 ```bash
- code --list-extensions
+  code --list-extensions
 ```
 
-### Create a brewfile with all packages installed using brew
+## HomeBrew useful commands
+
+### Create a Brewfile with all packages installed using brew
 
 ```bash
-brew bundle dump --describe
+  brew bundle dump --describe
+```
+
+### Clean up old versions of brew packages 
+
+```bash 
+  brew cleanup --prune=all --dry-run
+  brew autoremove --dry-run
 ```
