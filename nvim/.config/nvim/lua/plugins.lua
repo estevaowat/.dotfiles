@@ -51,6 +51,10 @@ return require('packer').startup(function(use)
     config = function() require("setup/lualine") end
   })
 
+  use {
+    'j-hui/fidget.nvim',
+    config = function() require("setup/fidget") end
+  }
   if packer_bootstrap then
     require('packer').sync()
   end
