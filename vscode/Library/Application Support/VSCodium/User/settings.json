@@ -49,5 +49,6 @@
   "editor.inlineSuggest.enabled": true,
   "editor.accessibilitySupport": "off",
   "workbench.productIconTheme": "icons-carbon",
-  "workbench.iconTheme": "vscode-icons"
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "Obsidian Dark"
 }

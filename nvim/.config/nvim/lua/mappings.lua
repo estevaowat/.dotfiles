@@ -15,4 +15,3 @@ vim.keymap.set("n","<leader>fh",function()
 vim.keymap.set("n", "<leader>fd", function()
 telescope.diagnostics()
 end)
-
