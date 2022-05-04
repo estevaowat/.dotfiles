@@ -65,11 +65,6 @@ return require("packer").startup(function(use)
   })
 
   use({
-    'mhartington/formatter.nvim',
-  --  config = function() require("setup/formatter") end,
-  })
-
-  use({
     "j-hui/fidget.nvim",
     config = function() require("setup/fidget") end,
   })
