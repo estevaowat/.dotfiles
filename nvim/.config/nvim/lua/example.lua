@@ -1,4 +1,7 @@
 local function somename(name)
-  local result = 1 + 1
-  return result 
+  local result = name + 'abc'
+  return result
+
 end
+
+local sum = somename('foo')

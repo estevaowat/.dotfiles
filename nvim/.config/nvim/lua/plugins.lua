@@ -26,8 +26,14 @@ return require("packer").startup(function(use)
 
   use("rebelot/kanagawa.nvim")
   use("nvim-lua/plenary.nvim")
-  use("neovim/nvim-lspconfig")
-  use("williamboman/nvim-lsp-installer")
+
+  use {
+    "williamboman/nvim-lsp-installer",
+    {
+      "neovim/nvim-lspconfig",
+      config = function() require("lsp") end
+    }
+  }
 
   use({
     "nvim-telescope/telescope.nvim",
