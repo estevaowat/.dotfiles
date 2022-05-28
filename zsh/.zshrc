@@ -77,3 +77,6 @@ export PATH="/usr/local/opt/liquibase/libexec:$PATH"
 ### SDKMAN added to PATH 
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+export GRAALVM_HOME="$HOME/.sdkman/candidates/java/22.1.0.r17-grl"
+export PATH="$GRAALVM_HOME/bin:$PATH"

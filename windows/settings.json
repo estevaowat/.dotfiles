@@ -1,0 +1,66 @@
+{
+  "breadcrumbs.enabled": true,
+  "css.lint.unknownAtRules": "ignore",
+  "editor.detectIndentation": false,
+  "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.suggestSelection": "first",
+  "editor.insertSpaces": true,
+  "editor.minimap.enabled": true,
+  "editor.parameterHints.enabled": false,
+  "editor.lineHeight": 22,
+  "editor.renderControlCharacters": false,
+  "editor.rulers": [
+    80,
+    120
+  ],
+  "editor.renderLineHighlight": "gutter",
+  "editor.tabSize": 3,
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.shellcheck": true
+  },
+  "explorer.confirmDelete": false,
+  "explorer.compactFolders": false,
+  "explorer.confirmDragAndDrop": false,
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "javascript.suggest.autoImports": false,
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "files.associations": {
+    "*.ts": "typescript"
+  },
+  "editor.inlineSuggest.enabled": true,
+  "editor.accessibilitySupport": "off",
+  "workbench.productIconTheme": "icons-carbon",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "Obsidian Dark",
+  "terminal.integrated.defaultProfile.windows": "GitBash",
+  "terminal.integrated.profiles.windows": {
+    "GitBash": {
+      "path": [
+        "C:\\Program Files\\Git\\bin\\bash.exe"
+      ],
+      "source": "Git Bash",
+      "args": [
+        "--login",
+        "-i"
+      ],
+      "icon": "terminal-bash"
+    }
+  }
+}
