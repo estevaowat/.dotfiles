@@ -50,5 +50,7 @@
   "editor.accessibilitySupport": "off",
   "workbench.productIconTheme": "icons-carbon",
   "workbench.iconTheme": "vscode-icons",
-  "workbench.colorTheme": "Obsidian Dark"
+  "workbench.colorTheme": "Obsidian Dark",
+  "html.format.preserveNewLines": false,
+  "diffEditor.wordWrap": "off"
 }

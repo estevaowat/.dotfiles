@@ -42,6 +42,7 @@ SPACESHIP_PROMPT_ORDER=(
    git
    node
    gradle
+   maven 
    pyenv
    docker
    aws
