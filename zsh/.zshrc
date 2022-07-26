@@ -4,6 +4,7 @@ ZSH_THEME="spaceship"
 dotfiles="$HOME/.dotfiles"
 alias code=codium
 alias vi=nvim
+alias lzd='lazydocker'
 export ZSH="$HOME/.oh-my-zsh"
 
 ################################ PLUGINS #################
