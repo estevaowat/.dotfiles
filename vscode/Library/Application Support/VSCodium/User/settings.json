@@ -1,5 +1,4 @@
 {
-  "audioCues.enabled": "off",
   "breadcrumbs.enabled": true,
   "css.lint.unknownAtRules": "ignore",
   "editor.detectIndentation": false,
@@ -11,7 +10,6 @@
   "editor.formatOnType": true,
   "editor.cursorBlinking": "phase",
   "editor.cursorSmoothCaretAnimation": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.suggestSelection": "first",
   "editor.insertSpaces": true,
   "editor.minimap.enabled": true,
@@ -28,8 +26,8 @@
     "javascript": "javascriptreact"
   },
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.fixAll.shellcheck": true
+    "source.fixAll.eslint": false,
+    "source.fixAll.shellcheck": false
   },
   "explorer.confirmDelete": false,
   "explorer.compactFolders": false,
@@ -45,6 +43,19 @@
   "[shellscript]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
   },
+  "[csharp]": {
+    "editor.defaultFormatter": "muhammad-sammy.csharp"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  //   "[jsonc]": {
+  //     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  //   },
+  //   "[javascript]": {
+  //     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  //   },
+
   "tabnine.experimentalAutoImports": true,
   "editor.inlineSuggest.enabled": true,
   "editor.accessibilitySupport": "off",
@@ -52,5 +63,8 @@
   "workbench.iconTheme": "vscode-icons",
   "workbench.colorTheme": "Obsidian Dark",
   "html.format.preserveNewLines": false,
-  "diffEditor.wordWrap": "off"
+  "diffEditor.wordWrap": "off",
+  "omnisharp.useModernNet": false,
+  "omnisharp.organizeImportsOnFormat": true,
+  "csharp.inlayHints.parameters.forObjectCreationParameters": true
 }
