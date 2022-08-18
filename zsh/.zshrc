@@ -25,10 +25,6 @@ plugins=(
    fast-syntax-highlighting # https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/fast-syntax-highlighting
    git                      # https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/git
    history                  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/history
-   gradle                   # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/gradle
-   jump                     # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/jump
-   nvm                      # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/nvm
-   screen                   # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/screen
    yarn                     # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/yarn
    zsh-autosuggestions      # https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/zsh-autosuggestions
    zsh-completions          # https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/zsh-completions
@@ -44,14 +40,10 @@ SPACESHIP_PROMPT_ORDER=(
    node
    gradle
    maven 
-   pyenv
    docker
    aws
    exec_time
    line_sep
-   vi_mode
-   jobs
-   exit_code
    char
 )
 
@@ -63,22 +55,20 @@ SPACESHIP_CHAR_SUFFIX=" "
 ### oh-my-zsh configuration
 source $ZSH/oh-my-zsh.sh 
 
-### NVM configuration
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-
 ### iterm2 integration
 test -e $HOME/.iterm2_shell_integration.zsh && source $HOME/.iterm2_shell_integration.zsh || true
 
+########################## ADD PATHS TO PATH ENVIRONMENT VARIABLES ##############################
 
-#### LIQUIBASE added to PATH
+### LIQUIBASE
 export PATH="/usr/local/opt/liquibase/libexec:$PATH"
 
-### SDKMAN added to PATH 
+### SDKMAN
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
+### GRAALVM
 export GRAALVM_HOME="$HOME/.sdkman/candidates/java/22.1.0.r17-grl"
 export PATH="$GRAALVM_HOME/bin:$PATH"
+
+. /usr/local/opt/asdf/libexec/asdf.sh

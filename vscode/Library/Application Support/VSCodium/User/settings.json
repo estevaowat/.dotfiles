@@ -38,7 +38,8 @@
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.defaultProfile.osx": "zsh",
   "files.associations": {
-    "*.ts": "typescript"
+    "*.ts": "typescript",
+    "*.cs": "csharp"
   },
   "[shellscript]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
@@ -49,13 +50,12 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  //   "[jsonc]": {
-  //     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  //   },
-  //   "[javascript]": {
-  //     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  //   },
-
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "tabnine.experimentalAutoImports": true,
   "editor.inlineSuggest.enabled": true,
   "editor.accessibilitySupport": "off",
@@ -66,5 +66,7 @@
   "diffEditor.wordWrap": "off",
   "omnisharp.useModernNet": false,
   "omnisharp.organizeImportsOnFormat": true,
-  "csharp.inlayHints.parameters.forObjectCreationParameters": true
+  "csharp.inlayHints.parameters.forObjectCreationParameters": true,
+  "markdown-preview-enhanced.liveUpdate": false,
+  "vsicons.dontShowNewVersionMessage": true
 }
