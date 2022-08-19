@@ -1,13 +1,21 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 ################################# ALIASES ################
 
-ZSH_THEME="spaceship"
+## ZSH_THEME="spaceship"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 dotfiles="$HOME/.dotfiles"
 alias code=codium
 alias vi=nvim
 alias lzd='lazydocker'
 export ZSH="$HOME/.oh-my-zsh"
 
-################################ PLUGINS #################
+################################ OH-MY-ZSH PLUGINS #################
 
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -32,25 +40,25 @@ plugins=(
 
 ########################## SPACESHIP CONFIGURATION ###########################
 
-SPACESHIP_PROMPT_ORDER=(
-   user
-   dir
-   host
-   git
-   node
-   gradle
-   maven 
-   docker
-   aws
-   exec_time
-   line_sep
-   char
-)
+##SPACESHIP_PROMPT_ORDER=(
+ ##  user
+##   dir
+##   host
+##   git
+##   node
+##   gradle
+##   maven 
+##   docker
+##   aws
+##   exec_time
+##   line_sep
+##   char
+##)
 
-SPACESHIP_USER_SHOW=always
-SPACESHIP_PROMPT_ADD_NEWLINE=false
-SPACESHIP_CHAR_SYMBOL="❯"
-SPACESHIP_CHAR_SUFFIX=" "
+##SPACESHIP_USER_SHOW=always
+##SPACESHIP_PROMPT_ADD_NEWLINE=false
+##SPACESHIP_CHAR_SYMBOL="❯"
+##SPACESHIP_CHAR_SUFFIX=" "
 
 ### oh-my-zsh configuration
 source $ZSH/oh-my-zsh.sh 
@@ -72,3 +80,6 @@ export GRAALVM_HOME="$HOME/.sdkman/candidates/java/22.1.0.r17-grl"
 export PATH="$GRAALVM_HOME/bin:$PATH"
 
 . /usr/local/opt/asdf/libexec/asdf.sh
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
