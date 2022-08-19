@@ -1,5 +1,11 @@
+#!/bin/sh
+
 ### Install applications and tools using brewfile
 which -s brew
+
+### Copy fonts from dotfiles to fonts folder
+cp ~/.dotfiles/fonts/*.ttf /Library/Fonts/
+
 if [[ $? != 0 ]]; then
    # Install Homebrew
    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -13,9 +19,6 @@ source ~/.dotfiles/oh-my-zsh/oh-my-zsh.sh
 
 ### Install plugins and themes for oh-my-zsh
 source ~/.dotfiles/oh-my-zsh/plugins.sh
-
-### Copy fonts from dotfiles to fonts folder
-cp ~/.dotfiles/fonts/*.ttf /Library/Fonts/
 
 ### Configure symbolic links
 source ~/.dotfiles/install/stow.sh

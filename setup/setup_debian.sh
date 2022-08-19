@@ -38,9 +38,6 @@ sudo apt install codium -y
 ### Install docker
 . ~/.dotfiles/general/docker.sh
 
-### Install nvm (Node)
-. ~/.dotfiles/general/node.sh
-
 ### Install sdkman and his candidates
 curl -s "https://get.sdkman.io" | bash
 . "$HOME/.sdkman/bin/sdkman-init.sh"
@@ -54,4 +51,3 @@ sudo snap install intellij-idea-community --classic
 
 . ~/.dotfiles/oh-my-zsh/oh-my-zsh.sh
 . ~/.dotfiles/oh-my-zsh/plugins.sh
-
