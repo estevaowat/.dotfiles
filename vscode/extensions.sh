@@ -2,12 +2,9 @@
 
 codium --install-extension antfu.icons-carbon
 codium --install-extension dbaeumer.vscode-eslint
-codium --install-extension dsznajder.es7-react-js-snippets
 codium --install-extension EditorConfig.EditorConfig
 codium --install-extension esbenp.prettier-vscode
 codium --install-extension GitHub.copilot
-codium --install-extension igorming.useful-react-snippets
-codium --install-extension jpoissonnier.vscode-styled-components
 codium --install-extension mikestead.dotenv
 codium --install-extension ms-azuretools.vscode-docker
 codium --install-extension ms-vscode-remote.remote-containers
@@ -22,7 +19,6 @@ codium --install-extension eamodio.gitlens
 codium --install-extension ms-vsliveshare.vsliveshare
 codium --install-extension streetsidesoftware.code-spell-checker
 codium --install-extension streetsidesoftware.code-spell-checker-portuguese-brazilian
-codium --install-extension TabNine.tabnine-vscode
 codium --install-extension foxundermoon.shell-format
 codium --install-extension mads-hartmann.bash-ide-vscode
 codium --install-extension rpinski.shebang-snippets

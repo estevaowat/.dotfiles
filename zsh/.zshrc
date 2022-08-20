@@ -7,7 +7,6 @@ fi
 
 ################################# ALIASES ################
 
-## ZSH_THEME="spaceship"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 dotfiles="$HOME/.dotfiles"
 alias code=codium
@@ -37,28 +36,6 @@ plugins=(
    zsh-autosuggestions      # https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/zsh-autosuggestions
    zsh-completions          # https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/zsh-completions
 )
-
-########################## SPACESHIP CONFIGURATION ###########################
-
-##SPACESHIP_PROMPT_ORDER=(
- ##  user
-##   dir
-##   host
-##   git
-##   node
-##   gradle
-##   maven 
-##   docker
-##   aws
-##   exec_time
-##   line_sep
-##   char
-##)
-
-##SPACESHIP_USER_SHOW=always
-##SPACESHIP_PROMPT_ADD_NEWLINE=false
-##SPACESHIP_CHAR_SYMBOL="❯"
-##SPACESHIP_CHAR_SUFFIX=" "
 
 ### oh-my-zsh configuration
 source $ZSH/oh-my-zsh.sh 

@@ -37,15 +37,20 @@
   "terminal.integrated.fontFamily": "Source Code Pro",
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.defaultProfile.windows": "GitBash",
+  "terminal.integrated.profiles.windows": {
+    "GitBash": {
+      "path": ["C:\\Program Files\\Git\\bin\\bash.exe"],
+      "source": "Git Bash",
+      "args": ["--login", "-i"],
+      "icon": "terminal-bash"
+    }
+  },
   "files.associations": {
-    "*.ts": "typescript",
-    "*.cs": "csharp"
+    "*.ts": "typescript"
   },
   "[shellscript]": {
     "editor.defaultFormatter": "foxundermoon.shell-format"
-  },
-  "[csharp]": {
-    "editor.defaultFormatter": "muhammad-sammy.csharp"
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
