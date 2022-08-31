@@ -5,16 +5,17 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-################################# ALIASES ################
-
 ZSH_THEME="powerlevel10k/powerlevel10k"
-dotfiles="$HOME/.dotfiles"
+
+# ALIASES 
 alias code=codium
 alias vi=nvim
 alias lzd='lazydocker'
+
+export nvim_config="$HOME/.dotfiles/nvim/.config/nvim/lua"
 export ZSH="$HOME/.oh-my-zsh"
 
-################################ OH-MY-ZSH PLUGINS #################
+# OH-MY-ZSH PLUGINS 
 
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/

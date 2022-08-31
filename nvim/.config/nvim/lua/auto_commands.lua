@@ -1,8 +1,17 @@
-vim.api.nvim_exec(
-  [[
-augroup FormatAutogroup
-  autocmd!
-  autocmd BufWritePost *.js,*.ts,*.jsx,*.tsx,*.java,*.go,*.rs,*.lua :lua vim.lsp.buf.formatting_seq_sync()
-augroup END
-]] ,
-  true)
+local format_autogroup = vim.api.nvim_create_augroup("format_autogroup", {
+          clear = true
+})
+
+vim.api.nvim_create_autocmd("BufWritePost", {
+  pattern = { "*.js[x]", "*.ts[x]", "*.java", "*.go", "*.lua" },
+  callback = function()
+    vim.lsp.buf.formatting_seq_sync()
+  end,
+  group = format_autogroup
+})
+
+local packer_group = vim.api.nvim_create_augroup("packer_user_config", { clear = true })
+vim.api.nvim_create_autocmd("BufWritePost", { pattern = { "plugins.lua" },
+  command = "source plugins.lua | PackerSync",
+  group = packer_group
+})

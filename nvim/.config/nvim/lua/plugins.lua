@@ -12,13 +12,6 @@ if fn.empty(fn.glob(install_path)) > 0 then
   })
 end
 
-vim.cmd([[
-  augroup packer_user_config
-    autocmd!
-    autocmd BufWritePost plugins.lua source <afile> | PackerSync
-  augroup end
-]])
-
 return require("packer").startup(function(use)
   use("wbthomason/packer.nvim")
 
@@ -74,7 +67,9 @@ return require("packer").startup(function(use)
     "j-hui/fidget.nvim",
     config = function() require("setup/fidget") end,
   })
+
   if packer_bootstrap then
     require("packer").sync()
   end
+
 end)
