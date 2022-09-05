@@ -34,7 +34,7 @@
   "explorer.confirmDragAndDrop": false,
   "javascript.updateImportsOnFileMove.enabled": "never",
   "javascript.suggest.autoImports": false,
-  "terminal.integrated.fontFamily": "Source Code Pro",
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono",
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.defaultProfile.osx": "zsh",
   "terminal.integrated.defaultProfile.windows": "GitBash",
