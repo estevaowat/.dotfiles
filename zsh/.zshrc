@@ -1,11 +1,12 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+source ~/powerlevel10k/powerlevel10k.zsh-theme
+
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-ZSH_THEME="powerlevel10k/powerlevel10k"
+SH_THEME="powerlevel10k/powerlevel10k"
 
 # ALIASES 
 alias code=codium
@@ -13,7 +14,6 @@ alias vi=nvim
 alias lzd='lazydocker'
 
 export nvim_config="$HOME/.dotfiles/nvim/.config/nvim/lua"
-export ZSH="$HOME/.oh-my-zsh"
 
 # OH-MY-ZSH PLUGINS 
 
@@ -21,7 +21,6 @@ export ZSH="$HOME/.oh-my-zsh"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 
 plugins=(
-   alias-finder             # https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/alias-finder
    bgnotify                 # https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/bgnotify
    copyfile                 # https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/copyfile
    copybuffer               # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/copybuffer
@@ -34,16 +33,22 @@ plugins=(
    git                      # https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/git
    history                  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/history
    yarn                     # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/yarn
-   zsh-autosuggestions      # https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/zsh-autosuggestions
-   zsh-completions          # https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/zsh-completions
 )
-
-### oh-my-zsh configuration
-source $ZSH/oh-my-zsh.sh 
 
 ### iterm2 integration
 test -e $HOME/.iterm2_shell_integration.zsh && source $HOME/.iterm2_shell_integration.zsh || true
 
+### zsh-completions
+fpath=($HOME/zsh/plugins/zsh-completions $fpath)
+
+### zsh-autosuggestions
+source ~/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+### fast-syntax-highlighting
+source ~/zsh/plugins/fast-syntax-highlighting/F-Sy-H.plugin.zsh
+
+### git aliases 
+source ~/zsh/plugins/git/git.plugin.zsh
 ########################## ADD PATHS TO PATH ENVIRONMENT VARIABLES ##############################
 
 ### LIQUIBASE
@@ -59,5 +64,4 @@ export PATH="$GRAALVM_HOME/bin:$PATH"
 
 . /usr/local/opt/asdf/libexec/asdf.sh
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
