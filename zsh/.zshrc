@@ -29,8 +29,6 @@ plugins=(
    copypath                 # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/copypath
    docker                   # https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/docker
    docker-compose           # https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/docker-compose
-   fast-syntax-highlighting # https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/fast-syntax-highlighting
-   git                      # https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/git
    history                  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/history
    yarn                     # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/yarn
 )
@@ -50,6 +48,12 @@ source ~/zsh/plugins/fast-syntax-highlighting/F-Sy-H.plugin.zsh
 ### git aliases 
 source ~/zsh/plugins/git/git.plugin.zsh
 ########################## ADD PATHS TO PATH ENVIRONMENT VARIABLES ##############################
+
+### gradle 
+source ~/zsh/plugins/gradle/gradle.plugin.zsh
+
+### docker-compose ALIASES
+source ~/zsh/plugins/docker-compose/docker-compose.plugin.zsh
 
 ### LIQUIBASE
 export PATH="/usr/local/opt/liquibase/libexec:$PATH"
