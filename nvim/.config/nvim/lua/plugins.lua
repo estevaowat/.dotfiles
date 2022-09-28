@@ -3,29 +3,19 @@ local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
 
 if fn.empty(fn.glob(install_path)) > 0 then
   packer_bootstrap = fn.system({
-    "git",
-    "clone",
-    "--depth",
-    "1",
-    "https://github.com/wbthomason/packer.nvim",
-    install_path,
+    "git", "clone", "--depth", "1",
+    "https://github.com/wbthomason/packer.nvim", install_path
   })
 end
 
 return require("packer").startup(function(use)
   use("wbthomason/packer.nvim")
-  use{
-   "nvim-treesitter/nvim-treesitter", 
-  run = ":TSUpdate" 
-}
+  use { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" }
 
   use("rebelot/kanagawa.nvim")
   use("nvim-lua/plenary.nvim")
 
-  use{
-    "nvim-telescope/telescope.nvim",
-    requires = { "nvim-lua/plenary.nvim" },
-  }
+  use { "nvim-telescope/telescope.nvim", requires = { "nvim-lua/plenary.nvim" } }
 
   use("hrsh7th/nvim-cmp")
   use("hrsh7th/cmp-nvim-lsp")
@@ -36,31 +26,26 @@ return require("packer").startup(function(use)
   use({
     "tzachar/cmp-tabnine",
     run = "./install.sh",
-    requires = "hrsh7th/nvim-cmp",
+    requires = "hrsh7th/nvim-cmp"
   })
-use { "williamboman/mason.nvim",
-  "williamboman/mason-lspconfig.nvim"
-  }
+  use { "williamboman/mason.nvim", "williamboman/mason-lspconfig.nvim" }
 
   use({
     "jose-elias-alvarez/null-ls.nvim",
-    requires = { "nvim-lua/plenary.nvim" },
-})
-
+    requires = { "nvim-lua/plenary.nvim" }
+  })
 
   use("onsails/lspkind-nvim")
   use("L3MON4D3/LuaSnip")
 
   use {
     "nvim-lualine/lualine.nvim",
-    requires = { "kyazdani42/nvim-web-devicons", opt = true },
+    requires = { "kyazdani42/nvim-web-devicons", opt = true }
   }
 
   use("j-hui/fidget.nvim")
 
-    use(  "neovim/nvim-lspconfig")-- Configurations for Nvim LSP
-  if packer_bootstrap then
-    require("packer").sync()
-  end
+  use("neovim/nvim-lspconfig") 
+  if packer_bootstrap then require("packer").sync() end
 
 end)
