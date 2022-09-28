@@ -14,7 +14,7 @@ end
 
 return require("packer").startup(function(use)
   use("wbthomason/packer.nvim")
-  use{ 
+  use{
    "nvim-treesitter/nvim-treesitter", 
   run = ":TSUpdate" 
 }
@@ -41,6 +41,12 @@ return require("packer").startup(function(use)
 use { "williamboman/mason.nvim",
   "williamboman/mason-lspconfig.nvim"
   }
+
+  use({
+    "jose-elias-alvarez/null-ls.nvim",
+    requires = { "nvim-lua/plenary.nvim" },
+})
+
 
   use("onsails/lspkind-nvim")
   use("L3MON4D3/LuaSnip")
