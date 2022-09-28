@@ -30,7 +30,6 @@ plugins=(
    docker                   # https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/docker
    docker-compose           # https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/docker-compose
    history                  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/history
-   yarn                     # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/yarn
 )
 
 ### iterm2 integration

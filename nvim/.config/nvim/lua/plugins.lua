@@ -14,27 +14,18 @@ end
 
 return require("packer").startup(function(use)
   use("wbthomason/packer.nvim")
-
-  use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
+  use{ 
+   "nvim-treesitter/nvim-treesitter", 
+  run = ":TSUpdate" 
+}
 
   use("rebelot/kanagawa.nvim")
   use("nvim-lua/plenary.nvim")
 
-  use {
-    "williamboman/nvim-lsp-installer",
-    {
-      "neovim/nvim-lspconfig",
-      config = function() require("lsp") end
-    }
-  }
-
-  use({
+  use{
     "nvim-telescope/telescope.nvim",
     requires = { "nvim-lua/plenary.nvim" },
-    config = function()
-      require("setup/telescope")
-    end,
-  })
+  }
 
   use("hrsh7th/nvim-cmp")
   use("hrsh7th/cmp-nvim-lsp")
@@ -46,28 +37,22 @@ return require("packer").startup(function(use)
     "tzachar/cmp-tabnine",
     run = "./install.sh",
     requires = "hrsh7th/nvim-cmp",
-    config = function()
-      require("setup/cmp_tabnine")
-    end,
   })
+use { "williamboman/mason.nvim",
+  "williamboman/mason-lspconfig.nvim"
+  }
 
   use("onsails/lspkind-nvim")
-
   use("L3MON4D3/LuaSnip")
 
-  use({
+  use {
     "nvim-lualine/lualine.nvim",
     requires = { "kyazdani42/nvim-web-devicons", opt = true },
-    config = function()
-      require("setup/lualine")
-    end,
-  })
+  }
 
-  use({
-    "j-hui/fidget.nvim",
-    config = function() require("setup/fidget") end,
-  })
+  use("j-hui/fidget.nvim")
 
+    use(  "neovim/nvim-lspconfig")-- Configurations for Nvim LSP
   if packer_bootstrap then
     require("packer").sync()
   end
