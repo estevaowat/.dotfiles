@@ -34,3 +34,5 @@ vim.keymap.set("n", "<leader>rn", "<cmd>lua vim.lsp.buf.rename()<CR>", opts)
 vim.keymap.set("n", "<leader>ca", "<cmd>lua vim.lsp.buf.code_action()<CR>", opts)
 vim.keymap.set("n", "gr", "<cmd>lua vim.lsp.buf.references()<CR>", opts)
 vim.keymap.set("n", "<leader>f", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts)
+
+vim.keymap.set("n", "<leader>t", "<cmd>ToggleTerm<CR>", opts)

@@ -8,16 +8,9 @@ local lspconfig = require("lspconfig")
 
 require("mason-lspconfig").setup_handlers {
   function()
-    lspconfig["sumneko_lua"].setup {
-      settings = {
-        Lua = {
-          diagnostics = {
-            -- Get the language server to recognize the `vim` global
-            globals = { 'vim' }
-          }
-        }
-      }
-
-    }
+    lspconfig["sumneko_lua"].setup({
+      settings = { Lua = { diagnostics = { globals = { 'vim' } } } }
+    })
+    lspconfig["tsserver"].setup {}
   end
 }

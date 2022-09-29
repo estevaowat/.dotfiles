@@ -3,7 +3,7 @@ local format_autogroup = vim.api.nvim_create_augroup("format_autogroup", {
 })
 
 vim.api.nvim_create_autocmd("BufWritePost", {
-  pattern = { "*.js[x]", "*.ts[x]", "*.java", "*.go", "*.lua" },
+  pattern = { "*.js", "*.ts", "*.java", "*.go", "*.lua" },
   callback = function()
     vim.lsp.buf.formatting_seq_sync()
   end,

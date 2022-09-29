@@ -45,7 +45,17 @@ return require("packer").startup(function(use)
 
   use("j-hui/fidget.nvim")
 
-  use("neovim/nvim-lspconfig") 
+  use("neovim/nvim-lspconfig")
+
+  use {
+    "akinsho/toggleterm.nvim",
+    tag = '*',
+    config = function() require("toggleterm").setup() end
+  }
+  use {
+    "windwp/nvim-autopairs",
+    config = function() require("nvim-autopairs").setup {} end
+  }
   if packer_bootstrap then require("packer").sync() end
 
 end)
