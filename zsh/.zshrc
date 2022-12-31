@@ -57,6 +57,11 @@ source ~/zsh/plugins/docker-compose/docker-compose.plugin.zsh
 ### LIQUIBASE
 export PATH="/usr/local/opt/liquibase/libexec:$PATH"
 
+### golang
+export GOPATH=$HOME/go
+export GOROOT="$(brew --prefix golang)/libexec"
+export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
+
 ### SDKMAN
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
