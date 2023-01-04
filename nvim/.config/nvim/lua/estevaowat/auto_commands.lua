@@ -13,7 +13,7 @@ local packer_group = vim.api.nvim_create_augroup("packer_user_config", {
 })
 
 vim.api.nvim_create_autocmd("BufWritePost", {
-	pattern = "plugins.lua",
+	pattern = "packer.lua",
 	command = "source <afile> | PackerSync",
 	group = packer_group
 })
