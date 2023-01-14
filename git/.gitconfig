@@ -2,7 +2,7 @@
 	name = Estevão Watanabe
 	email = estevao.watanabe@gmail.com
 [core]
-	editor = code --wait
+    editor = nvim
 [push]
 	default = simple
 [init]
