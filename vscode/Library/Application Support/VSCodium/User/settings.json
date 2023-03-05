@@ -32,7 +32,7 @@
   "explorer.confirmDelete": false,
   "explorer.compactFolders": false,
   "explorer.confirmDragAndDrop": false,
-  "javascript.updateImportsOnFileMove.enabled": "never",
+  "javascript.updateImportsOnFileMove.enabled": "always",
   "javascript.suggest.autoImports": false,
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono",
   "terminal.integrated.fontSize": 14,
@@ -61,7 +61,6 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "tabnine.experimentalAutoImports": true,
   "editor.inlineSuggest.enabled": true,
   "editor.accessibilitySupport": "off",
   "workbench.productIconTheme": "icons-carbon",
@@ -69,9 +68,10 @@
   "workbench.colorTheme": "Tokyo Night",
   "html.format.preserveNewLines": false,
   "diffEditor.wordWrap": "off",
-  "omnisharp.useModernNet": false,
-  "omnisharp.organizeImportsOnFormat": true,
-  "csharp.inlayHints.parameters.forObjectCreationParameters": true,
-  "markdown-preview-enhanced.liveUpdate": false,
-  "vsicons.dontShowNewVersionMessage": true
+  "vsicons.dontShowNewVersionMessage": true,
+  "update.mode": "manual",
+  "extensions.autoCheckUpdates": false,
+  "extensions.autoUpdate": "onlyEnabledExtensions",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "vim.smartRelativeLine": true
 }
