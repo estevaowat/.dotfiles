@@ -47,4 +47,5 @@ return require('packer').startup(function(use)
 
     use { 'numToStr/Navigator.nvim' }
     use { 'windwp/nvim-autopairs' }
+    use { 'ThePrimeagen/vim-be-good' }
 end)
