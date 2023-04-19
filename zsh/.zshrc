@@ -57,6 +57,7 @@ source ~/zsh/plugins/docker-compose/docker-compose.plugin.zsh
 ### LIQUIBASE
 export PATH="/usr/local/opt/liquibase/libexec:$PATH"
 
+export PATH="/Applications/IntelliJ IDEA CE.app/Contents/MacOS:$PATH"
 ### golang
 export GOPATH=$HOME/go
 export GOROOT="$(brew --prefix golang)/libexec"
