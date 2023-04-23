@@ -65,7 +65,7 @@
   "editor.accessibilitySupport": "off",
   "workbench.productIconTheme": "icons-carbon",
   "workbench.iconTheme": "vscode-icons",
-  "workbench.colorTheme": "Tokyo Night",
+  "workbench.colorTheme": "Gruvbox Dark Hard",
   "html.format.preserveNewLines": false,
   "diffEditor.wordWrap": "off",
   "vsicons.dontShowNewVersionMessage": true,

@@ -5,13 +5,16 @@ return require('packer').startup(function(use)
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
 
-    use({
-        "rebelot/kanagawa.nvim",
-        as = "kanagawa",
-        config = function()
-            vim.cmd.colorscheme("kanagawa")
-        end
-    })
+    --    use({
+    --        "rebelot/kanagawa.nvim",
+    --        as = "kanagawa",
+    --        config = function()
+    --            vim.cmd.colorscheme("kanagawa")
+    --        end
+    --    })
+    use { "ellisonleao/gruvbox.nvim", as = "gruvbox", config = function ()
+        vim.cmd.colorscheme("gruvbox")
+    end }
 
     use {
         'nvim-lualine/lualine.nvim',
