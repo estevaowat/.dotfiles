@@ -3,12 +3,8 @@ require('Navigator').setup({
     disable_on_zoom = true
 })
 
--- Keybindings
-local map = vim.api.nvim_set_keymap
-local opts = { noremap = true, silent = true }
-
-map('n', "<C-h>", "<CMD>lua require('Navigator').left()<CR>", opts)
-map('n', "<C-k>", "<CMD>lua require('Navigator').up()<CR>", opts)
-map('n', "<C-l>", "<CMD>lua require('Navigator').right()<CR>", opts)
-map('n', "<C-j>", "<CMD>lua require('Navigator').down()<CR>", opts)
-map('n', "<A-p>", "<CMD>lua require('Navigator').previous()<CR>", opts)
+vim.keymap.set({ 'n', 't' }, '<C-h>', require('Navigator').left)
+vim.keymap.set({ 'n', 't' }, '<C-k>', require('Navigator').up)
+vim.keymap.set({ 'n', 't' }, '<C-l>', require('Navigator').right)
+vim.keymap.set({ 'n', 't' }, '<C-j', require('Navigator').down)
+vim.keymap.set({ 'n', 't' }, '<A-p>', require('Navigator').previous)
