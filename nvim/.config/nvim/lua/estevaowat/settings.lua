@@ -12,4 +12,3 @@ vim.opt.expandtab = true
 vim.opt.smarttab = true
 vim.opt.wildmenu = true
 vim.opt.showmode = false
-
