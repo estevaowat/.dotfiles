@@ -6,7 +6,8 @@ lsp.ensure_installed({
     "eslint", 
 "tsserver",
     "gopls",
-    "lua_ls"
+    "lua_ls",
+    "yamlls"
 })
 
 lsp.configure("lua_ls", {
