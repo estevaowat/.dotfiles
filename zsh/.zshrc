@@ -12,7 +12,7 @@ SH_THEME="powerlevel10k/powerlevel10k"
 alias code=codium
 alias vi=nvim
 alias lzd='lazydocker'
-
+alias ls='ls -lhA --color=auto'
 export nvim_config="$HOME/.dotfiles/nvim/.config/nvim/lua"
 
 # OH-MY-ZSH PLUGINS 
@@ -49,7 +49,7 @@ source ~/zsh/plugins/git/git.plugin.zsh
 ########################## ADD PATHS TO PATH ENVIRONMENT VARIABLES ##############################
 
 ### gradle 
-source ~/zsh/plugins/gradle/gradle.plugin.zsh
+### source ~/zsh/plugins/gradle/gradle.plugin.zsh
 
 ### docker-compose ALIASES
 source ~/zsh/plugins/docker-compose/docker-compose.plugin.zsh

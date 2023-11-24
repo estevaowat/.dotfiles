@@ -9,7 +9,7 @@
   "editor.formatOnPaste": true,
   "editor.formatOnType": true,
   "editor.cursorBlinking": "phase",
-  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorSmoothCaretAnimation": "on",
   "editor.suggestSelection": "first",
   "editor.insertSpaces": true,
   "editor.minimap.enabled": true,
