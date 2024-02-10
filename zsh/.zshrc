@@ -59,10 +59,7 @@ export PATH="/usr/local/opt/liquibase/libexec:$PATH"
 
 export PATH="/Applications/IntelliJ IDEA CE.app/Contents/MacOS:$PATH"
 ### golang
-export GOPATH=$HOME/go
-export GOROOT="$(brew --prefix golang)/libexec"
-export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
-
+. ~/.asdf/plugins/golang/set-env.zsh
 ### SDKMAN
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
@@ -71,6 +68,7 @@ export SDKMAN_DIR="$HOME/.sdkman"
 export GRAALVM_HOME="$HOME/.sdkman/candidates/java/22.1.0.r17-grl"
 export PATH="$GRAALVM_HOME/bin:$PATH"
 
-. /usr/local/opt/asdf/libexec/asdf.sh
 
+## zsh completion dump in cache folder
+export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 

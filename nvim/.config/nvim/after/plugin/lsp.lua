@@ -2,12 +2,13 @@ local lsp = require("lsp-zero")
 
 lsp.preset("recommended")
 
-lsp.ensure_installed({ 
-    "eslint", 
-"tsserver",
+lsp.ensure_installed({
+    "eslint",
+    "tsserver",
     "gopls",
     "lua_ls",
-    "yamlls"
+    "yamlls",
+    "marksman"
 })
 
 lsp.configure("lua_ls", {
