@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-
+### TODO: Convert this to ansible configuration
 ### Update and upgrade Ubuntu packages repositories
 sudo apt update
 sudo apt upgrade -y
