@@ -26,8 +26,8 @@
     "javascript": "javascriptreact"
   },
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": false,
-    "source.fixAll.shellcheck": false
+    "source.fixAll.eslint": "never",
+    "source.fixAll.shellcheck": "never"
   },
   "explorer.confirmDelete": false,
   "explorer.compactFolders": false,

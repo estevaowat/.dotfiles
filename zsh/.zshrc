@@ -9,12 +9,7 @@ fi
 SH_THEME="powerlevel10k/powerlevel10k"
 
 # ALIASES 
-alias code=codium
-alias vi=nvim
-alias lzd='lazydocker'
-alias ls='ls -lhA --color=auto'
-export nvim_config="$HOME/.dotfiles/nvim/.config/nvim/lua"
-
+source $HOME/zsh/aliases/aliases.sh
 # OH-MY-ZSH PLUGINS 
 
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
@@ -58,11 +53,6 @@ source ~/zsh/plugins/docker-compose/docker-compose.plugin.zsh
 export PATH="/usr/local/opt/liquibase/libexec:$PATH"
 
 export PATH="/Applications/IntelliJ IDEA CE.app/Contents/MacOS:$PATH"
-### golang
-. ~/.asdf/plugins/golang/set-env.zsh
-### SDKMAN
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 ### GRAALVM
 export GRAALVM_HOME="$HOME/.sdkman/candidates/java/22.1.0.r17-grl"
@@ -72,3 +62,13 @@ export PATH="$GRAALVM_HOME/bin:$PATH"
 ## zsh completion dump in cache folder
 export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 
+## Configure java home
+
+# Add JBang to environment
+alias j!=jbang
+export PATH="$HOME/.jbang/bin:$PATH"
+
+
+
+. /usr/local/opt/asdf/libexec/asdf.sh
+. ~/.asdf/plugins/golang/set-env.zsh
