@@ -70,3 +70,4 @@ export PATH="$HOME/.jbang/bin:$PATH"
 . /usr/local/opt/asdf/libexec/asdf.sh
 . ~/.asdf/plugins/golang/set-env.zsh
 . ~/.asdf/plugins/java/set-java-home.zsh
+
