@@ -1,5 +1,6 @@
 return {
-         "tiagovla/tokyodark.nvim", config = function()
+    "tiagovla/tokyodark.nvim",
+    config = function()
         vim.cmd.colorscheme("tokyodark")
-    end 
+    end
 }

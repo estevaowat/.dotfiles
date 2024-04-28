@@ -54,9 +54,6 @@ export PATH="/usr/local/opt/liquibase/libexec:$PATH"
 
 export PATH="/Applications/IntelliJ IDEA CE.app/Contents/MacOS:$PATH"
 
-### GRAALVM
-export GRAALVM_HOME="$HOME/.sdkman/candidates/java/22.1.0.r17-grl"
-export PATH="$GRAALVM_HOME/bin:$PATH"
 
 
 ## zsh completion dump in cache folder
@@ -72,3 +69,4 @@ export PATH="$HOME/.jbang/bin:$PATH"
 
 . /usr/local/opt/asdf/libexec/asdf.sh
 . ~/.asdf/plugins/golang/set-env.zsh
+. ~/.asdf/plugins/java/set-java-home.zsh

@@ -53,7 +53,6 @@ return {
                 end,
             }
         })
-        local cmp_select = { behavior = cmp.SelectBehavior.Select }
 
         cmp.setup({
             snippet = {
@@ -72,6 +71,17 @@ return {
                 ['<Up>'] = cmp.mapping.select_prev_item(),
                 ['<Down>'] = cmp.mapping.select_next_item(),
             }),
+        })
+
+        vim.diagnostic.config({
+            float = {
+                focusable = false,
+                style = "minimal",
+                border = "rounded",
+                source = "always",
+                header = "",
+                prefix = "",
+            },
         })
     end
 }
