@@ -6,14 +6,7 @@ Repository containning all my configs files to set up my dev machine.
 
 [git](https://git-scm.com/)
 
-## Usage
 
-1- Clone this repo in your machine.
+This repo should be used in with [playbook](https://github.com/estevaowat/ew-playbook)
+which is ansible scripts to setup my developer machine.
 
-2- Go to folder `./dotfiles`
-
-3- Run the setup sh file based on your operating system.
-
-- Debian (Ubuntu):`. ~/.dotfiles/setup/setup_debian.sh`
-- Arch (Manjaro):`. ~/.dotfiles/setup/setup_arch.sh`
-- Mac:`. ~/.dotfiles/setup/setup_mac.sh`

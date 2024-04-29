@@ -27,9 +27,6 @@ plugins=(
    history                  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/history
 )
 
-### iterm2 integration
-test -e $HOME/.iterm2_shell_integration.zsh && source $HOME/.iterm2_shell_integration.zsh || true
-
 ### zsh-completions
 fpath=($HOME/zsh/plugins/zsh-completions $fpath)
 
