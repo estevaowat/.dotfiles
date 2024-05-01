@@ -13,3 +13,4 @@ vim.opt.expandtab = true
 vim.opt.smarttab = true
 vim.opt.wildmenu = true
 vim.opt.showmode = false
+vim.api.nvim_set_option("clipboard", "unnamedplus")
