@@ -1,6 +1,6 @@
 #!/bin/sh
 PATH_SESSION=$1
-SESSION_NAME=$(basename $PATH_SESSION | tr . _)
+SESSION_NAME=$(basename $PATH_SESSION | tr . _ | tr ' ' '_')
 
 if ! tmux has-session -t $SESSION_NAME 2>/dev/null; then
     tmux new-session -ds "$SESSION_NAME" -c "$PATH_SESSION"
