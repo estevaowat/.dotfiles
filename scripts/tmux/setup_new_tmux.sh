@@ -4,6 +4,7 @@ sessions=(
     "$HOME/.dotfiles" 
     "$HOME/Desktop/projects/node-playground"
     "$HOME/Desktop/projects/go-playground"
+    "$HOME/Desktop/projects/ew-playbook"
     "$obsidian_folder"
 )
 
