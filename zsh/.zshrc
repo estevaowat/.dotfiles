@@ -68,3 +68,6 @@ export PATH="$HOME/.jbang/bin:$PATH"
 . ~/.asdf/plugins/golang/set-env.zsh
 . ~/.asdf/plugins/java/set-java-home.zsh
 
+
+# Created by `pipx` on 2024-05-06 02:57:24
+export PATH="$PATH:/Users/estevaowatanabe/.local/bin"
