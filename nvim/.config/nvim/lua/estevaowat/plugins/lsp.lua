@@ -41,6 +41,7 @@ return {
 				"tsserver",
 				"gopls",
 				"marksman",
+				"jdtls",
 			},
 			handlers = {
 				function(server_name)

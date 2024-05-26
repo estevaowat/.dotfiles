@@ -8,9 +8,9 @@ fi
 
 SH_THEME="powerlevel10k/powerlevel10k"
 
-# ALIASES 
+# ALIASES
 source $HOME/zsh/aliases/aliases.sh
-# OH-MY-ZSH PLUGINS 
+# OH-MY-ZSH PLUGINS
 
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -36,11 +36,11 @@ source ~/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 ### fast-syntax-highlighting
 source ~/zsh/plugins/fast-syntax-highlighting/F-Sy-H.plugin.zsh
 
-### git aliases 
+### git aliases
 source ~/zsh/plugins/git/git.plugin.zsh
 ########################## ADD PATHS TO PATH ENVIRONMENT VARIABLES ##############################
 
-### gradle 
+### gradle
 ### source ~/zsh/plugins/gradle/gradle.plugin.zsh
 
 ### docker-compose ALIASES
@@ -71,3 +71,12 @@ export PATH="$HOME/.jbang/bin:$PATH"
 
 # Created by `pipx` on 2024-05-06 02:57:24
 export PATH="$PATH:/Users/estevaowatanabe/.local/bin"
+
+
+# history
+setopt HIST_EXPIRE_DUPS_FIRST
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_IGNORE_SPACE
+setopt HIST_FIND_NO_DUPS
+setopt HIST_SAVE_NO_DUPS
