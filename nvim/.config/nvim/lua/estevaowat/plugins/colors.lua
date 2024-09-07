@@ -1,11 +1,28 @@
 return {
-	"ellisonleao/gruvbox.nvim",
+	"catppuccin/nvim",
+	name = "catppuccin",
 	opts = {
 		transparent_background = true,
 		gamma = 90,
 	},
+	priority = 1000,
 	config = function()
-		vim.o.background = "dark" -- or "light" for light mode
-		vim.cmd.colorscheme("gruvbox")
+		require("catppuccin").setup({
+			background = {
+				dark = "mocha",
+			},
+			transparent_background = true,
+			dim_inactive = {
+				enabled = true,
+			},
+		})
+		vim.cmd.colorscheme("catppuccin")
 	end,
+	integrations = {
+		mason = true,
+		telescope = {
+			enabled = true,
+			style = "nvchad",
+		},
+	},
 }

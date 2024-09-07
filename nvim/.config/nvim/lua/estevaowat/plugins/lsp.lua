@@ -25,13 +25,20 @@ return {
 			vim.lsp.protocol.make_client_capabilities(),
 			cmp_lsp.default_capabilities()
 		)
-		require("fidget").setup({})
+		require("fidget").setup({
+			notification = {
+				window = {
+					winblend = 0,
+				},
+			},
+		})
 		require("mason").setup()
 		require("mason-tool-installer").setup({
 			ensure_installed = {
-				"prettierd",
 				"prettier",
+				"prettierd",
 				"eslint_d",
+				"eslint",
 				"stylua",
 				"html",
 			},
