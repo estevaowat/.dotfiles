@@ -1,10 +1,11 @@
 return {
-	"tiagovla/tokyodark.nvim",
+	"ellisonleao/gruvbox.nvim",
 	opts = {
 		transparent_background = true,
 		gamma = 90,
 	},
 	config = function()
-		vim.cmd.colorscheme("tokyodark")
+		vim.o.background = "dark" -- or "light" for light mode
+		vim.cmd.colorscheme("gruvbox")
 	end,
 }

@@ -45,6 +45,9 @@ return {
 			},
 			handlers = {
 				function(server_name)
+					if server_name == "tsserver" then
+						server_name = "ts_ls"
+					end
 					require("lspconfig")[server_name].setup({
 						capabilities = capabilities,
 					})
@@ -64,6 +67,25 @@ return {
 										"before_each",
 										"after_each",
 									},
+								},
+							},
+						},
+					})
+				end,
+				["gopls"] = function()
+					local lspconfig = require("lspconfig")
+					local util = require("lspconfig/util")
+					lspconfig.gopls.setup({
+						capabilities = capabilities,
+						cmd = { "gopls" },
+						filetypes = { "go", "gomod", "gowork", "gotmpl" },
+						root_dir = util.root_pattern("go.work", "go.mod", ".git"),
+						settings = {
+							gopls = {
+								completeUnimported = true,
+								usePlaceholders = true,
+								analyses = {
+									unusedparams = true,
 								},
 							},
 						},
