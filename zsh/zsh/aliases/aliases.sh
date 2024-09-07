@@ -1,5 +1,4 @@
-#!/bin/sh
-
+#! /usr/bin/env zsh
 project_folder="$HOME/Desktop/projects"
 alias projects="cd $project_folder"
 alias code=codium
@@ -10,6 +9,7 @@ alias nvim_config="cd $HOME/.dotfiles/nvim/.config/nvim/"
 alias dotfiles="cd $HOME/.dotfiles"
 alias obsidian="cd $HOME/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/second_brain && nvim ."
 alias edit_zshrc="nvim $HOME/.zshrc"
+alias reload="source $HOME/.zshrc"
 export obsidian_folder="$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents/second_brain"
 
 function aliases_help(){

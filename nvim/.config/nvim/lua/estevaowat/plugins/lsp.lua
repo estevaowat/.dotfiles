@@ -33,6 +33,7 @@ return {
 				"prettier",
 				"eslint_d",
 				"stylua",
+				"html",
 			},
 		})
 		require("mason-lspconfig").setup({
