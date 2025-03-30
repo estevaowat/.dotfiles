@@ -13,7 +13,8 @@ alias obsidian="cd $HOME/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/
 alias edit_zshrc="nvim $HOME/.zshrc"
 alias reload="source $HOME/.zshrc"
 alias new_session=". $HOME/.dotfiles/scripts/tmux/create_session.sh"
-
+alias update-all-languages=". $HOME/.dotfiles/scripts/update_languages.bash"
+alias fzf="fzf --style full --preview 'fzf-preview.sh {}' --bind 'focus:transform-header:file --brief {}'"
 export obsidian_folder="$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents/second_brain"
 
 function aliases_help(){
@@ -22,5 +23,6 @@ echo "vi=nvim"
 echo "lzd=lazydocker"
 echo "ls=ls -lhA --color=auto"
 echo "nvim_config= cd $HOME/.dotfiles/nvim/.config/nvim"
-
 }
+
+

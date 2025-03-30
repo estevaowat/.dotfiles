@@ -45,16 +45,13 @@ return {
 		require("mason-lspconfig").setup({
 			ensure_installed = {
 				"lua_ls",
-				"tsserver",
+				"ts_ls",
 				"gopls",
 				"marksman",
 				"jdtls",
 			},
 			handlers = {
 				function(server_name)
-					if server_name == "tsserver" then
-						server_name = "ts_ls"
-					end
 					require("lspconfig")[server_name].setup({
 						capabilities = capabilities,
 					})
@@ -101,6 +98,7 @@ return {
 			},
 		})
 
+		local luasnip = require("luasnip")
 		cmp.setup({
 			snippet = {
 				expand = function(args)
@@ -112,8 +110,40 @@ return {
 				{ name = "luasnip" },
 			}, { { name = "buffer" } }),
 			mapping = cmp.mapping.preset.insert({
-				["<Tab>"] = cmp.mapping.confirm({ select = true }),
-				["<CR>"] = cmp.mapping.confirm({ select = true }),
+				["<CR>"] = cmp.mapping(function(fallback)
+					if cmp.visible() then
+						if luasnip.expandable() then
+							luasnip.expand()
+						else
+							cmp.confirm({
+								select = true,
+								behavior = cmp.ConfirmBehavior.Replace,
+							})
+						end
+					else
+						fallback()
+					end
+				end),
+
+				["<Tab>"] = cmp.mapping(function(fallback)
+					if cmp.visible() then
+						cmp.select_next_item()
+					elseif luasnip.locally_jumpable(1) then
+						luasnip.jump(1)
+					else
+						fallback()
+					end
+				end, { "i", "s" }),
+
+				["<S-Tab>"] = cmp.mapping(function(fallback)
+					if cmp.visible() then
+						cmp.select_prev_item()
+					elseif luasnip.locally_jumpable(-1) then
+						luasnip.jump(-1)
+					else
+						fallback()
+					end
+				end, { "i", "s" }),
 				["<Up>"] = cmp.mapping.select_prev_item(),
 				["<Down>"] = cmp.mapping.select_next_item(),
 			}),
@@ -154,10 +184,10 @@ return {
 		vim.keymap.set("n", "]d", function()
 			vim.diagnostic.goto_prev()
 		end, opts)
-		vim.keymap.set("n", "<leader>vca", function()
+		vim.keymap.set("n", "<leader>ca", function()
 			vim.lsp.buf.code_action()
 		end, opts)
-		vim.keymap.set("n", "<leader>rr", function()
+		vim.keymap.set("n", "<leader>gr", function()
 			require("telescope.builtin").lsp_references()
 		end, additional_opts)
 		vim.keymap.set("n", "<leader>rn", function()
