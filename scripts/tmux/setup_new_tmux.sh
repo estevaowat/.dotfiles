@@ -6,6 +6,7 @@ sessions=(
     "$HOME/Desktop/projects/node-playground"
     "$HOME/Desktop/projects/go-playground"
     "$HOME/Desktop/projects/ew-playbook"
+    "$HOME/Desltop/projects/python-playground"
     "$HOME/Desktop/projects/absolute-cinema"
     "$HOME/Desktop/projects/microservice"
     "$obsidian_folder"

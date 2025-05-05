@@ -17,6 +17,7 @@ return {
 		"j-hui/fidget.nvim",
 	},
 	config = function()
+		require("luasnip.loaders.from_vscode").lazy_load()
 		local cmp = require("cmp")
 		local cmp_lsp = require("cmp_nvim_lsp")
 		local capabilities = vim.tbl_deep_extend(
@@ -34,21 +35,25 @@ return {
 		})
 		require("mason").setup()
 		require("mason-tool-installer").setup({
+			-- formatter
 			ensure_installed = {
 				"prettier",
 				"eslint_d",
 				"eslint",
 				"stylua",
 				"html",
+				"black",
 			},
 		})
 		require("mason-lspconfig").setup({
+			-- language servers
 			ensure_installed = {
 				"lua_ls",
 				"ts_ls",
 				"gopls",
 				"marksman",
 				"jdtls",
+				"pyright",
 			},
 			handlers = {
 				function(server_name)
@@ -108,7 +113,8 @@ return {
 			sources = cmp.config.sources({
 				{ name = "nvim_lsp" },
 				{ name = "luasnip" },
-			}, { { name = "buffer" } }),
+				{ name = "buffer" },
+			}),
 			mapping = cmp.mapping.preset.insert({
 				["<CR>"] = cmp.mapping(function(fallback)
 					if cmp.visible() then
@@ -150,6 +156,7 @@ return {
 		})
 
 		vim.diagnostic.config({
+			virtual_text = true,
 			float = {
 				focusable = false,
 				style = "minimal",
