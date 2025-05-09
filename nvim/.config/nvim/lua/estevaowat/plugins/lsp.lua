@@ -104,6 +104,15 @@ return {
 		})
 
 		local luasnip = require("luasnip")
+
+		require("luasnip").filetype_extend("typescript", { "tsdoc" })
+		require("luasnip").filetype_extend("javascript", { "jsdoc" })
+		require("luasnip").filetype_extend("lua", { "luadoc" })
+		require("luasnip").filetype_extend("python", { "pydoc" })
+		require("luasnip").filetype_extend("go", { "godoc" })
+		require("luasnip").filetype_extend("java", { "javadoc" })
+		require("luasnip").filetype_extend("sh", { "shelldoc" })
+
 		cmp.setup({
 			snippet = {
 				expand = function(args)
