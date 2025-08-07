@@ -6,7 +6,7 @@ alias projects="cd $project_folder"
 alias vi=nvim
 alias code=zed
 alias lzd='lazydocker'
-alias ls='ls -lhA --color=auto'
+alias ls='ls --color=auto'
 alias nvim_config="cd $HOME/.dotfiles/nvim/.config/nvim/"
 alias dotfiles="cd $HOME/.dotfiles"
 alias obsidian="cd $HOME/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/second_brain && nvim ."

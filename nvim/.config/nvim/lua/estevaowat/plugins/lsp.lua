@@ -90,7 +90,6 @@ return {
 		})
 
 		local luasnip = require("luasnip")
-
 		require("luasnip").filetype_extend("typescript", { "tsdoc" })
 		require("luasnip").filetype_extend("javascript", { "jsdoc" })
 		require("luasnip").filetype_extend("lua", { "luadoc" })

@@ -65,7 +65,7 @@
   "editor.accessibilitySupport": "off",
   "workbench.productIconTheme": "icons-carbon",
   "workbench.iconTheme": "vscode-icons",
-  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "workbench.colorTheme": "Catppuccin Mocha",
   "html.format.preserveNewLines": false,
   "diffEditor.wordWrap": "off",
   "vsicons.dontShowNewVersionMessage": true,
@@ -73,5 +73,22 @@
   "extensions.autoCheckUpdates": false,
   "extensions.autoUpdate": "onlyEnabledExtensions",
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "vim.smartRelativeLine": true
+  "vim.smartRelativeLine": true,
+  "workbench.colorCustomizations": {
+    "sideBar.background": "#000000",
+    "activityBar.background": "#000000",
+    "editorGroupHeader.tabsBackground": "#000000",
+    "tab.activeBackground": "#000000",
+    "tab.inactiveBackground": "#000000",
+    "titleBar.activeBackground": "#000000",
+    "titleBar.inactiveBackground": "#000000",
+    "statusBar.background": "#000000",
+    "statusBar.noFolderBackground": "#000000",
+    "editor.background": "#000000",
+    "editorGutter.background": "#000000",
+    "terminal.background": "#000",
+    "terminalCursor.background": "#000",
+    "panel.background": "#000000",
+    "panel.border": "#000000"
+  }
 }
