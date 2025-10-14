@@ -90,5 +90,9 @@
     "terminalCursor.background": "#000",
     "panel.background": "#000000",
     "panel.border": "#000000"
+  },
+  "[python]": {
+    "diffEditor.ignoreTrimWhitespace": false,
+    "gitlens.codeLens.symbolScopes": ["!Module"]
   }
 }
