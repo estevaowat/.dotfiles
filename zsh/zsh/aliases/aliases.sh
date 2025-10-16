@@ -13,6 +13,7 @@ alias edit_zshrc="nvim $HOME/.zshrc"
 alias reload="source $HOME/.zshrc"
 alias new_session=". $HOME/.dotfiles/scripts/tmux/create_session.sh"
 alias update-all-languages=". $HOME/.dotfiles/scripts/update_languages.bash"
+alias update-machine=". $HOME/.dotfiles/scripts/update_machine.bash"
 alias fzf="fzf --style full --preview 'fzf-preview.sh {}' --bind 'focus:transform-header:file --brief {}'"
 alias proj='cd "$(fd . $HOME/Desktop/projects -t d -d 5 | fzf)"'
 export obsidian_folder="$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents/second_brain"
