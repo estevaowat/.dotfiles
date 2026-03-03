@@ -8,7 +8,7 @@ alias lzd='lazydocker'
 alias ls='ls --color=auto'
 alias nvim_config="cd $HOME/.dotfiles/nvim/.config/nvim/"
 alias dotfiles="cd $HOME/.dotfiles"
-alias obsidian="cd $HOME/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/second_brain && nvim ."
+alias sbrain="cd $HOME/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/second_brain && nvim ."
 alias edit_zshrc="nvim $HOME/.zshrc"
 alias reload="source $HOME/.zshrc"
 alias new_session=". $HOME/.dotfiles/scripts/tmux/create_session.sh"

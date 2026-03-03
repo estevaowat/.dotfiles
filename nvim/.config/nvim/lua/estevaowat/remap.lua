@@ -1,4 +1,4 @@
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex, { desc = "File Explorer" })
+vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 vim.keymap.set("n", "<leader>y", "ggVGy", { desc = "Yank entire buffer" })
 
 local keymap = vim.api.nvim_set_keymap

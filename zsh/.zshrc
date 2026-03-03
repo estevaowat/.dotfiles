@@ -18,7 +18,6 @@ source $HOME/zsh/plugins/git/git.plugin.zsh
 source $HOME/zsh/plugins/docker-compose/docker-compose.plugin.zsh
 
 export PATH="/usr/local/opt/liquibase/libexec:$PATH"
-export PATH="/Applications/IntelliJ IDEA CE.app/Contents/MacOS:$PATH"
 
 ## zsh completion dump in cache folder
 export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
@@ -43,6 +42,7 @@ export PATH="${PATH}:$(go env GOPATH)/bin"
 export PATH="$PATH:/Users/estevaowatanabe/.local/bin"
 export PATH="$PATH:$GOPATH"
 export PATH="$PATH:$GOBIN"
+export PATH="/Applications/IntelliJ\ IDEA.app/Contents/MacOS:$PATH"
 # history
 setopt HIST_EXPIRE_DUPS_FIRST
 setopt HIST_IGNORE_DUPS
@@ -58,9 +58,43 @@ export FZF_CTRL_T_OPTS="
   --preview 'bat -n --color=always {}'
   --bind 'ctrl-/:change-preview-window(down|hidden|)'"
 
+
+autoload -Uz compinit && compinit
+
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
 # To customize prompt, run `p10k configure` or edit ~/.dotfiles/p10k/.p10k.zsh.
 [[ ! -f ~/.dotfiles/p10k/.p10k.zsh ]] || source ~/.dotfiles/p10k/.p10k.zsh
 
+#compdef opencode
+###-begin-opencode-completions-###
+#
+# yargs command completion script
+#
+# Installation: opencode completion >> ~/.zshrc
+#    or opencode completion >> ~/.zprofile on OSX.
+#
+_opencode_yargs_completions()
+{
+  local reply
+  local si=$IFS
+  IFS=$'
+' reply=($(COMP_CWORD="$((CURRENT-1))" COMP_LINE="$BUFFER" COMP_POINT="$CURSOR" opencode --get-yargs-completions "${words[@]}"))
+  IFS=$si
+  if [[ ${#reply} -gt 0 ]]; then
+    _describe 'values' reply
+  else
+    _default
+  fi
+}
+if [[ "'${zsh_eval_context[-1]}" == "loadautofunc" ]]; then
+  _opencode_yargs_completions "$@"
+else
+  compdef _opencode_yargs_completions opencode
+fi
+###-end-opencode-completions-###
+
+
+# Added by Antigravity
+export PATH="/Users/estevaowatanabe/.antigravity/antigravity/bin:$PATH"
