@@ -13,8 +13,8 @@ return {
 				typescriptreact = { "prettier", stop_after_first = true },
 				javascript = { "prettier", stop_after_first = true },
 				javascriptreact = { "prettier", stop_after_first = true },
+				yaml = { "prettier" },
 				go = { "goimports", "gofmt" },
-
 				["*"] = { "codespell" },
 				["_"] = { "trim_whitespace" },
 			},

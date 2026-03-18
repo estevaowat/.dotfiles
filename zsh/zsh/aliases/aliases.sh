@@ -4,6 +4,7 @@ project_folder="$HOME/Desktop/projects"
 alias projects="cd $project_folder"
 
 alias vi=nvim
+alias k=kubectl
 alias lzd='lazydocker'
 alias ls='ls --color=auto'
 alias nvim_config="cd $HOME/.dotfiles/nvim/.config/nvim/"
