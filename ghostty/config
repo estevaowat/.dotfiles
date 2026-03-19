@@ -44,7 +44,7 @@
 background-opacity=0.9
 background=#000000
 command="~/.dotfiles/scripts/tmux/start_tmux_open_terminal.sh"
-font-family="Ubuntu Nerd Font Mono"
+font-family="0xProto Nerd Font Mono"
 font-size=13
 background-blur-radius = 20
 
