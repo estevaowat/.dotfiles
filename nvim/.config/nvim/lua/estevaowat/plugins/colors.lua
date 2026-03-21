@@ -1,28 +1,15 @@
 return {
-	"catppuccin/nvim",
-	name = "catppuccin",
-	opts = {
-		transparent_background = true,
-		gamma = 90,
-	},
+	"AlexvZyl/nordic.nvim",
+	lazy = false,
 	priority = 1000,
 	config = function()
-		require("catppuccin").setup({
-			background = {
-				dark = "mocha",
-			},
-			transparent_background = true,
-			dim_inactive = {
-				enabled = true,
+		require("nordic").load({
+			transparent = {
+				-- Enable transparent background.
+				bg = true,
+				-- Enable transparent background for floating windows.
+				float = true,
 			},
 		})
-		vim.cmd.colorscheme("catppuccin")
 	end,
-	integrations = {
-		mason = true,
-		telescope = {
-			enabled = true,
-			style = "nvchad",
-		},
-	},
 }

@@ -45,7 +45,7 @@ background-opacity=0.9
 background=#000000
 command="~/.dotfiles/scripts/tmux/start_tmux_open_terminal.sh"
 font-family="0xProto Nerd Font Mono"
-font-size=13
+font-size=14
 background-blur-radius = 20
 
 # macOS specific features
